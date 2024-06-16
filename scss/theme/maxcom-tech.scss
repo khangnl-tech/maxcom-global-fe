@@ -142,12 +142,6 @@
   }
 
   .ecommerce {
-    max-width: 994px !important;
-    border: 1px solid var(--bg-white);
-    background: var(--bg-contact);
-    backdrop-filter: blur(15px);
-    padding: 33px 100px 0;
-    border-radius: 20px;
     @media screen and (max-width: 768px) {
       padding: 33px 40px 0;
     }

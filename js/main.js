@@ -371,6 +371,18 @@ includeHTML();
         }
     });
 
+    $('#aigen-phone .owl-carousel').owlCarousel({
+        loop: true,
+        nav: false,
+        margin: 20,
+        dots: true,
+        responsive:{
+            0: {
+                items: 1
+            }
+        }
+    });
+
     // google map
     if ($("#mapBox").length) {
         var $lat = $("#mapBox").data("lat");
