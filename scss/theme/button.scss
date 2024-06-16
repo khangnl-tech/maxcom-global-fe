@@ -1,0 +1,11 @@
+// Button css
+
+.button-contact {
+  display: inline-flex;
+  padding: 15px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  background: var(--Second-Color, #04F);
+}

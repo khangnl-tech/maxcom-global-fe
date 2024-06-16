@@ -1,0 +1,626 @@
+.chatbot-ai .chatbot-ai-content .main-content .content-left .action {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.chatbot-ai .chatbot-ai-content .main-content .content-left .action .icon {
+  display: inline-flex;
+  padding: 5px;
+  align-items: flex-start;
+  border-radius: 50px;
+  background: #312B60;
+}
+.chatbot-ai .chatbot-ai-content .main-content .content-left .action .icon img {
+  width: 38px;
+  height: 38px;
+}
+.chatbot-ai .chatbot-ai-content .main-content .content-left .action .redirect-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.chatbot-ai .chatbot-ai-content .main-content .content-left .action .redirect-btn button {
+  padding: 10px 20px;
+}
+.chatbot-ai .chatbot-ai-content .main-content .content-left .content {
+  color: var(--color-six);
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+.chatbot-ai .chatbot-ai-content .main-content .content-left .desc {
+  color: var(--color-six);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+@media (max-width: 768px) {
+  .chatbot-ai .chatbot-ai-content .main-content .content-left .desc {
+    margin-bottom: 15px;
+  }
+}
+.chatbot-ai .chatbot-ai-content .owl-nav {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.chatbot-ai .chatbot-ai-content .owl-nav .custom-nav-btn {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 22px;
+  border: 1px solid var(--btn-nav);
+}
+.chatbot-ai .chatbot-ai-content .owl-nav .custom-prev-btn {
+  left: -30px;
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .chatbot-ai .chatbot-ai-content .owl-nav .custom-prev-btn {
+    left: 0;
+  }
+}
+.chatbot-ai .chatbot-ai-content .owl-nav .custom-next-btn {
+  right: -30px;
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .chatbot-ai .chatbot-ai-content .owl-nav .custom-next-btn {
+    right: 0;
+  }
+}
+.chatbot-ai .chatbot-ai-content .owl-nav button {
+  border: none;
+  outline: none;
+}
+.chatbot-ai .chatbot-ai-content .owl-nav .owl-prev.disabled,
+.chatbot-ai .chatbot-ai-content .owl-nav .owl-prev.disabled .custom-nav-btn {
+  background-color: rgba(245, 245, 245, 0.6);
+}
+.chatbot-ai .chatbot-ai-content .owl-nav .owl-next.disabled,
+.chatbot-ai .chatbot-ai-content .owl-nav .owl-next.disabled .custom-nav-btn {
+  background-color: rgba(245, 245, 245, 0.6);
+}
+.chatbot-ai .chatbot-ai-content .owl-nav .owl-prev:not(.disabled) .custom-nav-btn {
+  background-color: #0044FF;
+}
+.chatbot-ai .chatbot-ai-content .owl-nav .owl-next:not(.disabled) .custom-nav-btn {
+  background-color: #0044FF;
+}
+@media (max-width: 768px) {
+  .chatbot-ai .chatbot-ai-content {
+    padding: 0 12px;
+  }
+  .chatbot-ai .chatbot-ai-content .slide-image {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
+
+.home-page .about-us.maxcom-edu .container {
+  max-width: 996px;
+  gap: 50px;
+}
+.home-page .about-us.maxcom-edu .container .container--right {
+  width: 45%;
+  margin-top: 62px;
+}
+.home-page .about-us.maxcom-edu .container .container--right .img-big {
+  position: relative;
+}
+.home-page .about-us.maxcom-edu .container .container--right .img-small {
+  position: absolute;
+  bottom: 45px;
+  right: 290px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .home-page .about-us.maxcom-edu .container .container--right {
+    width: 100%;
+  }
+  .home-page .about-us.maxcom-edu .container .container--right .img-big {
+    text-align: right;
+  }
+  .home-page .about-us.maxcom-edu .container .container--right .img-small {
+    bottom: 40px;
+    right: 50px;
+  }
+  .home-page .about-us.maxcom-edu .container .container--right .img-small img:first-child {
+    width: 45%;
+  }
+  .home-page .about-us.maxcom-edu .container .container--right .img-small img {
+    width: 55%;
+  }
+}
+.home-page .about-us.maxcom-edu .container .container--left--sub p {
+  width: 490px;
+}
+.home-page .about-us.maxcom-edu .container .container--left--head .button-rounded {
+  background: var(--second-color);
+  border: 2px solid var(--title-border-1);
+}
+@media (max-width: 768px) {
+  .home-page .about-us.maxcom-edu .container {
+    flex-wrap: wrap;
+  }
+  .home-page .about-us.maxcom-edu .container .container--left--sub p {
+    width: 100%;
+  }
+  .home-page .about-us.maxcom-edu .container .container--left .view-more {
+    text-align: center;
+  }
+  .home-page .about-us.maxcom-edu .container .container--left .view-more button {
+    margin: 0 auto;
+  }
+}
+.home-page .mission {
+  max-width: 996px;
+  padding-bottom: 90px;
+}
+.home-page .mission .mission-content .content-main {
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.home-page .mission .mission-content .content-main .button-rounded {
+  padding: 10px 20px;
+}
+.home-page .mission .mission-content .content-main .content-top {
+  border-radius: 30px;
+  border: 1px solid var(--btn-bar);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 23px;
+  position: absolute;
+  width: 100%;
+}
+.home-page .mission .mission-content .content-main .content-top .container--left--head {
+  margin-bottom: 15px;
+}
+.home-page .mission .mission-content .content-main .content-top .title {
+  color: var(--color-six);
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.home-page .mission .mission-content .content-main .content-top .container--left--sub {
+  color: var(--color-six);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 458px;
+  height: 110px;
+  flex-shrink: 0;
+}
+.home-page .mission .mission-content .content-main .content-bottom {
+  position: relative;
+  z-index: 999;
+  right: 34px;
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .home-page .mission .mission-content {
+    padding: 0 12px;
+  }
+  .home-page .mission .mission-content .content-main {
+    display: block;
+    height: unset;
+  }
+  .home-page .mission .mission-content .content-main .content-bottom {
+    right: unset;
+    width: 100%;
+    z-index: unset;
+    height: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .home-page .mission .mission-content .content-main .content-top {
+    position: unset;
+    display: block;
+  }
+  .home-page .mission .mission-content .content-main .content-top .container--left--sub {
+    width: 100%;
+    height: unset;
+  }
+}
+.home-page #maxcom-edu .out-team-content {
+  max-width: 996px;
+  margin: 0 auto;
+}
+.home-page #maxcom-edu .content-bottom {
+  margin-bottom: 90px;
+}
+.home-page #maxcom-edu .content-bottom .item {
+  margin-right: 0;
+}
+.home-page #maxcom-edu .content-bottom .item .title {
+  top: unset !important;
+  right: 17px;
+  bottom: 25%;
+}
+@media (max-width: 768px) {
+  .home-page #maxcom-edu .content-bottom .item .title {
+    font-size: 16px;
+    bottom: 20%;
+    top: unset;
+  }
+  .home-page #maxcom-edu .content-bottom .item .title h3 {
+    font-size: 16px;
+  }
+}
+.home-page #maxcom-edu .content-bottom .item img {
+  transform: translateX(-50%);
+  width: 100%;
+  height: 75%;
+  object-fit: contain;
+}
+.home-page #maxcom-edu .content-bottom .item .content {
+  margin-top: 260px;
+  height: 550px;
+}
+.home-page #maxcom-edu .content-bottom .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.home-page #maxcom-edu .content-bottom .owl-nav .custom-nav-btn {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 22px;
+  border: 1px solid var(--btn-nav);
+}
+.home-page #maxcom-edu .content-bottom .owl-nav .custom-prev-btn {
+  left: -80px;
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .home-page #maxcom-edu .content-bottom .owl-nav .custom-prev-btn {
+    left: 0;
+  }
+}
+.home-page #maxcom-edu .content-bottom .owl-nav .custom-next-btn {
+  right: -80px;
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .home-page #maxcom-edu .content-bottom .owl-nav .custom-next-btn {
+    right: 0;
+  }
+}
+.home-page #maxcom-edu .content-bottom .owl-nav button {
+  border: none;
+  outline: none;
+}
+.home-page #maxcom-edu .content-bottom .owl-nav .owl-prev.disabled,
+.home-page #maxcom-edu .content-bottom .owl-nav .owl-prev.disabled .custom-nav-btn {
+  background-color: rgba(245, 245, 245, 0.6);
+}
+.home-page #maxcom-edu .content-bottom .owl-nav .owl-next.disabled,
+.home-page #maxcom-edu .content-bottom .owl-nav .owl-next.disabled .custom-nav-btn {
+  background-color: rgba(245, 245, 245, 0.6);
+}
+.home-page #maxcom-edu .content-bottom .owl-nav .owl-prev:not(.disabled) .custom-nav-btn {
+  background-color: #0044FF;
+}
+.home-page #maxcom-edu .content-bottom .owl-nav .owl-next:not(.disabled) .custom-nav-btn {
+  background-color: #0044FF;
+}
+.home-page #training {
+  padding-bottom: 90px;
+}
+.home-page #training .main-content {
+  padding: 0 12px;
+  max-width: 996px;
+  margin: 0 auto;
+}
+.home-page #training .main-content .item {
+  padding: 35px 34px 0 34px;
+  border-radius: 30px;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  margin-top: 5px;
+}
+.home-page #training .main-content .item .content-top {
+  text-align: center;
+}
+.home-page #training .main-content .item .content-top button {
+  padding: 10px 20px;
+  margin-bottom: 15px;
+}
+.home-page #training .main-content .item .content-top h2 {
+  color: var(--title-color);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+.home-page #training .main-content .item .content-top .desc {
+  color: var(--title-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 35px;
+}
+.home-page #training .main-content .item .content-top .desc p {
+  max-width: 397px;
+  margin: 0 auto;
+}
+.home-page #training .main-content .owl-nav {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.home-page #training .main-content .owl-nav .custom-nav-btn {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 22px;
+  border: 1px solid var(--btn-nav);
+}
+.home-page #training .main-content .owl-nav .custom-prev-btn {
+  left: -80px;
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .home-page #training .main-content .owl-nav .custom-prev-btn {
+    left: 0;
+  }
+}
+.home-page #training .main-content .owl-nav .custom-next-btn {
+  right: -80px;
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .home-page #training .main-content .owl-nav .custom-next-btn {
+    right: 0;
+  }
+}
+.home-page #training .main-content .owl-nav button {
+  border: none;
+  outline: none;
+}
+.home-page #training .main-content .owl-nav .owl-prev.disabled,
+.home-page #training .main-content .owl-nav .owl-prev.disabled .custom-nav-btn {
+  background-color: rgba(245, 245, 245, 0.6);
+}
+.home-page #training .main-content .owl-nav .owl-next.disabled,
+.home-page #training .main-content .owl-nav .owl-next.disabled .custom-nav-btn {
+  background-color: rgba(245, 245, 245, 0.6);
+}
+.home-page #training .main-content .owl-nav .owl-prev:not(.disabled) .custom-nav-btn {
+  background-color: #0044FF;
+}
+.home-page #training .main-content .owl-nav .owl-next:not(.disabled) .custom-nav-btn {
+  background-color: #0044FF;
+}
+.home-page .shared-by-student {
+  padding-bottom: 90px;
+}
+.home-page .shared-by-student .main-content {
+  max-width: 996px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+.home-page .shared-by-student .main-content .content-top button {
+  padding: 10px 20px;
+  margin-bottom: 15px;
+}
+.home-page .shared-by-student .main-content .content-top h2 {
+  color: var(--title-color);
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+.home-page .shared-by-student .main-content .content-top .desc {
+  color: var(--title-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+.home-page .shared-by-student .main-content .content-top .desc p {
+  max-width: 588px;
+}
+.home-page .shared-by-student .main-content .content-bottom .owl-dots {
+  padding-top: 35px;
+}
+.home-page .shared-by-student .main-content .content-bottom .list-content {
+  column-count: 3;
+  gap: 20px;
+}
+.home-page .shared-by-student .main-content .content-bottom .list-content .item {
+  border-radius: 30px;
+  border: 1px solid var(--btn-bar);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 18px 20px;
+  overflow: hidden;
+}
+.home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(even) {
+  margin-top: 20px;
+}
+.home-page .shared-by-student .main-content .content-bottom .list-content .item .head {
+  height: 25%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.home-page .shared-by-student .main-content .content-bottom .list-content .item .head .image img {
+  border-radius: 65.262px;
+  border: 3px solid var(--Stocke1, #FFF);
+  background: lightgray -0.418px -0.324px/109.143% 109.198% no-repeat, #D9D9D9;
+}
+.home-page .shared-by-student .main-content .content-bottom .list-content .item .head .title h5 {
+  color: var(--title-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.home-page .shared-by-student .main-content .content-bottom .list-content .item .text-content {
+  height: 75%;
+  overflow: hidden;
+}
+.home-page .shared-by-student .main-content .content-bottom .list-content .item .text-content p {
+  color: var(--title-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: block;
+  height: 100%;
+}
+.home-page .shared-by-student .main-content .content-bottom .list-content .item .text-content span {
+  display: block;
+  height: 90px;
+  background: var(--liner-hidden);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
+}
+.home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(1) {
+  height: 427px;
+}
+.home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(2) {
+  height: 300px;
+}
+.home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(3) {
+  height: 300px;
+}
+.home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(4) {
+  height: 427px;
+}
+.home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(5) {
+  height: 364px;
+}
+.home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(6) {
+  height: 364px;
+}
+@media (max-width: 768px) {
+  .home-page .shared-by-student .main-content .content-bottom .list-content {
+    column-count: 2;
+  }
+  .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(1) {
+    height: 430px;
+  }
+  .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(2) {
+    height: 430px;
+    margin-top: 20px;
+  }
+  .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(3) {
+    height: 430px;
+    margin-top: 20px;
+  }
+  .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(4) {
+    height: 430px;
+    margin-top: 20px;
+  }
+  .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(5) {
+    height: 430px;
+    margin-top: 20px;
+  }
+  .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(6) {
+    height: 430px;
+    margin-top: 20px;
+  }
+}
+.home-page .testimonials {
+  padding-bottom: 90px;
+}
+.home-page .testimonials .main-content {
+  max-width: 996px;
+  margin: 0 auto;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+}
+.home-page .testimonials .main-content .content-top {
+  width: calc(40% - 10px);
+}
+.home-page .testimonials .main-content .content-top .text-left button {
+  padding: 10px 20px;
+  margin-bottom: 15px;
+}
+.home-page .testimonials .main-content .content-top .text-left h2 {
+  color: var(--title-color);
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+.home-page .testimonials .main-content .content-top .text-left .desc {
+  color: var(--title-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.home-page .testimonials .main-content .review {
+  width: calc(60% - 10px);
+  margin-top: 36px;
+}
+.home-page .testimonials .main-content .review .content-bottom .item {
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .home-page .testimonials .main-content {
+    padding: 0 12px;
+    display: block;
+  }
+  .home-page .testimonials .main-content .content-top {
+    width: 100%;
+  }
+  .home-page .testimonials .main-content .review {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=maxcom-edu.css.map */

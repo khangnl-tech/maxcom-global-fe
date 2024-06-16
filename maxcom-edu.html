@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <title> Maxcom global </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="main">
+    <div id="header" class="main-page">
+        <nav class="nav-bar">
+            <div class="logo-img">
+                <a href="index.html" class="logo-link">
+                    <img src="/img/logo-maxcom-light.svg" alt="logo">
+                </a>
+
+                <button id="navbar-toggler" class="navbar-toggler d-lg-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="menu-box d-none d-lg-block">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a class="menu-link" href="index.html">Trang chủ</a>
+                    </li>
+                    <li class="menu-item position-md-relative">
+                        <a class="menu-link" style="cursor: pointer">
+                            Hệ sinh thái
+                            <span class="drop-down-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                    <path d="M1.66663 2L5.37117 5.67453C5.80867 6.10849 6.52458 6.10849 6.96208 5.67453L10.6666 2" stroke="#01F5B3" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                        </a>
+                        <ul class="menu-item-child">
+                            <li class="child-item">
+                                <a class="child-link" href="maxcom-tech.html">Maxcom tech</a>
+                            </li>
+                            <li class="child-item">
+                                <a class="child-link" href="maxcom-edu.html">Maxcom edu</a>
+                            </li>
+                            <li class="child-item">
+                                <a class="child-link" href="maxcom-ecom.html">Maxcom Ecom</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="cooperate.html">Về chúng tôi</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="news.html">Tin tức - Sự kiện</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="cooperate.html">Cơ hội hợp tác</a>
+                    </li>
+
+                    <li class="menu-item">
+                            <span class="search-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
+                                    <path d="M11.1666 20C16.4133 20 20.6666 15.7467 20.6666 10.5C20.6666 5.25329 16.4133 1 11.1666 1C5.91992 1 1.66663 5.25329 1.66663 10.5C1.66663 15.7467 5.91992 20 11.1666 20Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21.6666 21L19.6666 19" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                    </li>
+
+                    <li class="contact-button">
+                        <button class="button button-rounded">Contact</button>
+                    </li>
+                </ul>
+            </div>
+            <ul class="menu-mobile d-block d-lg-none">
+                <li class="menu-mobile-item">
+                    <a class="menu-mobile-link" href="/index.html">Trang chủ</a>
+                </li>
+
+                <li class="menu-mobile-item">
+                    <a class="menu-mobile-link" href="/about-us.html">Về chúng tôi</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a class="menu-mobile-link" href="/aigen-x.html">Tin tức</a>
+                </li>
+                <li class="menu-mobile-item d-flex align-items-center">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="theme-toggle" class="theme-toggle">
+        <button type="button" data-theme-toggle aria-label="Change to light theme">
+                <span id="sun-icon">
+                    <img src="img/sun.png" alt="">
+                </span>
+            <span id="moon-icon">
+                    <img src="img/moon.png" alt="">
+                </span>
+        </button>
+    </div>
+
+    <div class="home-page" style=" padding-top: 89px">
+<!--        <div class="bg-image">-->
+<!--            <div class="bg-light1">-->
+<!--                <img src="img/light-1.svg" alt="block1">-->
+<!--            </div>-->
+<!--            <div class="bg-x">-->
+<!--                <img src="img/bg-x.svg" alt="">-->
+<!--            </div>-->
+<!--            <div class="ellipse1">-->
+<!--                <img src="img/ellipse1.svg" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
+
+        <section class="chatbot-ai main-page">
+            <div class="chatbot-ai-content">
+                <div class="main-content">
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                            <div class="content-left">
+                                <div class="action">
+                                    <span class="icon">
+                                        <img src="img/back.png" alt="back">
+                                    </span>
+                                    <div class="redirect-btn">
+                                        <button class="button button-rounded">The era of AI-powered</button>
+                                    </div>
+                                </div>
+                                <h2 class="content">
+                                    The ChatBot AI The Future is here the Maxcom
+                                </h2>
+                                <p class="desc">AI Copywriting is revolutionizing the way content is created. AI can create content for blogs, articles, websites, social media and more.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-7">
+                            <div class="content-right">
+                                <div class="slide-image">
+                                    <div class="owl-carousel">
+                                        <div class="item">
+                                            <img src="img/maxcomedu1.png" alt="">
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/maxcomedu1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us maxcom-edu">
+<!--            <div class="bg-image">-->
+<!--                <div class="bg-light2">-->
+<!--                    <img src="img/light-2.svg" alt="block2">-->
+<!--                </div>-->
+<!--                <div class="ellipse2">-->
+<!--                    <img src="img/ellipse2.svg" alt="ellipse2">-->
+<!--                </div>-->
+<!--            </div>-->
+            <div class="container main-page justify-content-between">
+                <div class="container--left">
+                    <div class="container--left--head">
+                        <button class="button-rounded">Chúng tôi là ai</button>
+                    </div>
+                    <div class="container--left--h1">
+                        Chúng tôi là ai?
+                    </div>
+                    <div class="container--left--sub">
+                        <p class="des-light">
+                            Điểm tựa công nghệ cho sáng tạo không giới hạn
+                            Maxcom Tech tự hào là đơn vị cung cấp các dịch vụ gia công và thiết kế phần mềm tiên tiến, mang lại những ứng dụng trí tuệ nhân tạo thông minh, tối ưu hóa mọi quy trình làm việc.
+                        </p>
+                    </div>
+                    <div class="view-more">
+                        <button class="button-view-more button">
+                            <span>View more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
+                                <path d="M12.0703 1.15552L0.929688 12.2962" stroke="var(--color-six)" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.80031 1.15552L12.0703 1.15552L12.0703 11.4255" stroke="var(--color-six)" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="container--right">
+                    <div class="list-image">
+                        <div class="img-big">
+                            <img src=img/aboutus-maxconedu.png alt="">
+                        </div>
+                        <div class="img-small">
+                            <img src=img/aboutus-maxconedu3.png alt="">
+                            <img src=img/aboutus-maxconedu2.png alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mission main-page">
+            <div class="mission-content">
+                <div class="content-main">
+                    <div class="content-bottom">
+                        <img src="img/mission-maxcom-edu.png" alt="">
+                    </div>
+                    <div class="content-top">
+                        <div class="container--left--head">
+                            <button class="button-rounded">Mission</button>
+                        </div>
+                        <h2 class="title">MaxcomEdu</h2>
+                        <div class="container--left--sub">
+                            <p class="des-light">
+                                The mission is to be a pioneer in forming and expanding awareness, affirming that AI is the key to great changes.
+                                Maxcom Edu carries the mission of bringing artificial intelligence closer to the Vietnamese people - helping them not only deeply understand technology and AI, but also master and strongly apply technology to life. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="out-team main-page" id="maxcom-edu">
+            <div class="out-team-content">
+                <div class="content-top">
+                    <button class="button button-rounded">Out team</button>
+                    <h2>Maxcom Team</h2>
+                    <div class="desc">
+                        <p class="des-light">Becoming the top choice in the field of technology and education; create a breakthrough, build a smart and modern community</p>
+                    </div>
+                </div>
+
+                <div class="content-bottom">
+                    <div class="owl-carousel">
+                        <div class="item">
+                            <img src="img/woman.png" alt="Image">
+                            <div class="title">
+                                <h3>Ngô Huyền Trang</h3>
+                                <h4>Trang Lily's</h4>
+                            </div>
+                            <div class="content">
+                                <div class="main-content des-light">
+                                    <ul class="list">
+                                        <li>Chủ tịch HĐQT MAXCOM GROUP</li>
+                                        <li>Giám đốc chiến lược Smart Tech</li>
+                                    </ul>
+                                    <div class="community-activities">Hoạt động cộng đồng</div>
+                                    <ul class="list">
+                                        <li>Giám đốc Công ty TNHH số CHUDOSO</li>
+                                        <li>Ủy viên Ban Chấp hành Hội Doanh Nghiệp Trẻ Thành Phố Hà Nội</li>
+                                        <li>Ủy viên Ban Chấp hành Hiệp hội Quảng cáo Việt Nam</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/woman.png" alt="Image">
+                            <div class="title">
+                                <h3>Ngô Huyền Trang</h3>
+                                <h4>Trang Lily's</h4>
+                            </div>
+                            <div class="content">
+                                <div class="main-content des-light">
+                                    <ul>
+                                        <li>Chủ tịch HĐQT MAXCOM GROUP</li>
+                                        <li>Giám đốc chiến lược Smart Tech</li>
+                                    </ul>
+                                    <div class="community-activities">Hoạt động cộng đồng</div>
+                                    <ul>
+                                        <li>Giám đốc Công ty TNHH số CHUDOSO</li>
+                                        <li>Ủy viên Ban Chấp hành Hội Doanh Nghiệp Trẻ Thành Phố Hà Nội</li>
+                                        <li>Ủy viên Ban Chấp hành Hiệp hội Quảng cáo Việt Nam</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/woman.png" alt="Image">
+                            <div class="title">
+                                <h3>Ngô Huyền Trang</h3>
+                                <h4>Trang Lily's</h4>
+                            </div>
+                            <div class="content">
+                                <div class="main-content des-light">
+                                    <ul>
+                                        <li>Chủ tịch HĐQT MAXCOM GROUP</li>
+                                        <li>Giám đốc chiến lược Smart Tech</li>
+                                    </ul>
+                                    <div class="community-activities">Hoạt động cộng đồng</div>
+                                    <ul>
+                                        <li>Giám đốc Công ty TNHH số CHUDOSO</li>
+                                        <li>Ủy viên Ban Chấp hành Hội Doanh Nghiệp Trẻ Thành Phố Hà Nội</li>
+                                        <li>Ủy viên Ban Chấp hành Hiệp hội Quảng cáo Việt Nam</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/woman.png" alt="Image">
+                            <div class="title">
+                                <h3>Ngô Huyền Trang</h3>
+                                <h4>Trang Lily's</h4>
+                            </div>
+                            <div class="content">
+                                <div class="main-content des-light">
+                                    <ul>
+                                        <li>Chủ tịch HĐQT MAXCOM GROUP</li>
+                                        <li>Giám đốc chiến lược Smart Tech</li>
+                                    </ul>
+                                    <div class="community-activities">Hoạt động cộng đồng</div>
+                                    <ul>
+                                        <li>Giám đốc Công ty TNHH số CHUDOSO</li>
+                                        <li>Ủy viên Ban Chấp hành Hội Doanh Nghiệp Trẻ Thành Phố Hà Nội</li>
+                                        <li>Ủy viên Ban Chấp hành Hiệp hội Quảng cáo Việt Nam</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/woman.png" alt="Image">
+                            <div class="title">
+                                <h3>Ngô Huyền Trang</h3>
+                                <h4>Trang Lily's</h4>
+                            </div>
+                            <div class="content">
+                                <div class="main-content des-light">
+                                    <ul>
+                                        <li>Chủ tịch HĐQT MAXCOM GROUP</li>
+                                        <li>Giám đốc chiến lược Smart Tech</li>
+                                    </ul>
+                                    <div class="community-activities">Hoạt động cộng đồng</div>
+                                    <ul>
+                                        <li>Giám đốc Công ty TNHH số CHUDOSO</li>
+                                        <li>Ủy viên Ban Chấp hành Hội Doanh Nghiệp Trẻ Thành Phố Hà Nội</li>
+                                        <li>Ủy viên Ban Chấp hành Hiệp hội Quảng cáo Việt Nam</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="training main-page" id="training">
+            <div class="main-content">
+                <div class="owl-carousel">
+                    <div class="item">
+                        <div class="content-top">
+                            <button class="button button-rounded">Training Model</button>
+                            <h2>Maxcom Edu</h2>
+                            <div class="desc">
+                                <p class="des-light">Becoming the top choice in the field of technology and education; create a breakthrough, build a smart and modern community</p>
+                            </div>
+                        </div>
+                        <div class="conntent-bottom">
+                            <img src="img/content1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="content-top">
+                            <button class="button button-rounded">Education program</button>
+                            <h2>Maxcom Edu</h2>
+                            <div class="desc">
+                                <p class="des-light">Becoming the top choice in the field of technology and education; create a breakthrough, build a smart and modern community</p>
+                            </div>
+                        </div>
+                        <div class="conntent-bottom">
+                            <img src="img/content2.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="content-top">
+                            <button class="button button-rounded">Education program</button>
+                            <h2>Maxcom Edu</h2>
+                            <div class="desc">
+                                <p class="des-light">Becoming the top choice in the field of technology and education; create a breakthrough, build a smart and modern community</p>
+                            </div>
+                        </div>
+                        <div class="conntent-bottom">
+                            <img src="img/content1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-page testimonials">
+            <div class="main-content">
+                <div class="content-top">
+                    <div class="text-left">
+                        <button class="button button-rounded">Testimonials</button>
+                        <h2>Customers Talk About Us</h2>
+                        <div class="desc">
+                            <p class="des-light">A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="content-bottom">
+                        <div class="owl-carousel">
+                            <div class="item">
+                                <img src="img/customer.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/customer.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="shared-by-student main-page">
+            <div class="main-content">
+                <div class="content-top text-left">
+                    <button class="button button-rounded">Shared by students</button>
+                    <h2>with MaxcomTech</h2>
+                    <div class="desc">
+                        <p class="des-light">A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative</p>
+                    </div>
+                </div>
+                <div class="content-bottom">
+                    <div class="owl-carousel">
+                        <div class="list-content">
+                            <div class="item">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="img/icon-user-maxcomedu.svg" alt="">
+                                    </div>
+
+                                    <div class="title">
+                                        <h5>Trang Dilys</h5>
+                                        <p>Student K11</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-content">
+                                    <p>A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="img/icon-user-maxcomedu.svg" alt="">
+                                    </div>
+
+                                    <div class="title">
+                                        <h5>Trang Dilys</h5>
+                                        <p>Student K11</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-content">
+                                    <p>A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="img/icon-user-maxcomedu.svg" alt="">
+                                    </div>
+
+                                    <div class="title">
+                                        <h5>Trang Dilys</h5>
+                                        <p>Student K11</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-content">
+                                    <p>A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="img/icon-user-maxcomedu.svg" alt="">
+                                    </div>
+
+                                    <div class="title">
+                                        <h5>Trang Dilys</h5>
+                                        <p>Student K11</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-content">
+                                    <p>A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="img/icon-user-maxcomedu.svg" alt="">
+                                    </div>
+
+                                    <div class="title">
+                                        <h5>Trang Dilys</h5>
+                                        <p>Student K11</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-content">
+                                    <p>A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="img/icon-user-maxcomedu.svg" alt="">
+                                    </div>
+
+                                    <div class="title">
+                                        <h5>Trang Dilys</h5>
+                                        <p>Student K11</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-content">
+                                    <p>A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-content">
+                            <div class="item">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="img/icon-user-maxcomedu.svg" alt="">
+                                    </div>
+
+                                    <div class="title">
+                                        <h5>Trang Dilys</h5>
+                                        <p>Student K11</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-content">
+                                    <p>A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="img/icon-user-maxcomedu.svg" alt="">
+                                    </div>
+
+                                    <div class="title">
+                                        <h5>Trang Dilys</h5>
+                                        <p>Student K11</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-content">
+                                    <p>A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="img/icon-user-maxcomedu.svg" alt="">
+                                    </div>
+
+                                    <div class="title">
+                                        <h5>Trang Dilys</h5>
+                                        <p>Student K11</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-content">
+                                    <p>A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="img/icon-user-maxcomedu.svg" alt="">
+                                    </div>
+
+                                    <div class="title">
+                                        <h5>Trang Dilys</h5>
+                                        <p>Student K11</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-content">
+                                    <p>A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="img/icon-user-maxcomedu.svg" alt="">
+                                    </div>
+
+                                    <div class="title">
+                                        <h5>Trang Dilys</h5>
+                                        <p>Student K11</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-content">
+                                    <p>A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="img/icon-user-maxcomedu.svg" alt="">
+                                    </div>
+
+                                    <div class="title">
+                                        <h5>Trang Dilys</h5>
+                                        <p>Student K11</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-content">
+                                    <p>A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.A place to create knowledge for the future of artificial intelligence, a place that not only trains but also pioneers, providing creative technology solutions for individuals and businesses.</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="content-top">
+                <button class="button button-rounded">News</button>
+                <h2>Maxcom</h2>
+                <div class="desc">
+                    <p class="des-light">Becoming the top choice in the field of technology and education; create a breakthrough, build a smart and modern community</p>
+                </div>
+            </div>
+
+            <div class="content-bottom">
+                <div class="owl-carousel">
+                    <div class="item">
+                        <div class="content">
+                            <img src="img/vnexpress.png" alt="">
+                            <div class="main-content des-light">
+                                <h3 class="title-light">AI virtual assistant increases marketing efficiency by 400%</h3>
+                                <div class="des-light">
+                                    <p>Becoming the top choice in the field of technology and education; create a breakthrough, build a smart and modern community</p>
+                                </div>
+
+                                <img src="img/new.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <img src="img/vnexpress.png" alt="">
+                            <div class="main-content des-light">
+                                <h3 class="title-light">AI virtual assistant increases marketing efficiency by 400%</h3>
+                                <div class="des-light">
+                                    <p>Becoming the top choice in the field of technology and education; create a breakthrough, build a smart and modern community</p>
+                                </div>
+
+                                <img src="img/new.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <img src="img/vnexpress.png" alt="">
+                            <div class="main-content des-light">
+                                <h3 class="title-light">AI virtual assistant increases marketing efficiency by 400%</h3>
+                                <div class="des-light">
+                                    <p>Becoming the top choice in the field of technology and education; create a breakthrough, build a smart and modern community</p>
+                                </div>
+
+                                <img src="img/new.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <img src="img/vnexpress.png" alt="">
+                            <div class="main-content des-light">
+                                <h3 class="title-light">AI virtual assistant increases marketing efficiency by 400%</h3>
+                                <div class="des-light">
+                                    <p>Becoming the top choice in the field of technology and education; create a breakthrough, build a smart and modern community</p>
+                                </div>
+
+                                <img src="img/new.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-maxcom main-page mb-0">
+            <div class="content-top">
+                <button class="button button-rounded">Tin tức</button>
+                <h2 class="title-light">News of Maxcom</h2>
+            </div>
+            <div class="tab">
+                <button class="tablinks active" data-tab="1">Tin Tức Công Nghệ </button>
+                <button class="tablinks" data-tab="2">Tin tức Tuyển Dụng</button>
+                <button class="tablinks" data-tab="3">Tin Tức Nội Bộ</button>
+            </div>
+
+            <div class="content-container">
+                <div class="content active" data-content="1">
+                    <div class="new-list">
+                        <div class="new-list--block">
+                            <img src="img/new1.png" alt="">
+                            <div class="button button-rounded">
+                                News
+                            </div>
+                            <h2 class="title-light">Đội Ngũ Chuyên Gia Hàng Đầu</h2>
+                            <p class="des-light">Chuyên phát triển, gia công và thiết kế phần mềm, cung cấp các ứng...</p>
+                        </div>
+                        <div class="new-list--block">
+                            <img src="img/new1.png" alt="">
+                            <div class="button button-rounded">
+                                News
+                            </div>
+                            <h2 class="title-light">Đội Ngũ Chuyên Gia Hàng Đầu</h2>
+                            <p class="des-light">Chuyên phát triển, gia công và thiết kế phần mềm, cung cấp các ứng...</p>
+                        </div>
+                        <div class="new-list--block">
+                            <img src="img/new1.png" alt="">
+                            <div class="button button-rounded">
+                                News
+                            </div>
+                            <h2 class="title-light">Đội Ngũ Chuyên Gia Hàng Đầu</h2>
+                            <p class="des-light">Chuyên phát triển, gia công và thiết kế phần mềm, cung cấp các ứng...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content" data-content="2">
+                    <div class="new-list--block">
+                        <img src="img/new1.png" alt="">
+                        <div class="button button-rounded">
+                            News
+                        </div>
+                        <h2 class="title-light">Đội Ngũ Chuyên Gia Hàng Đầu</h2>
+                        <p class="des-light">Chuyên phát triển, gia công và thiết kế phần mềm, cung cấp các ứng...</p>
+                    </div>
+                </div>
+                <div class="content" data-content="3">
+                    <div class="new-list--block">
+                        <img src="img/new1.png" alt="">
+                        <div class="button button-rounded">
+                            News
+                        </div>
+                        <h2 class="title-light">Đội Ngũ Chuyên Gia Hàng Đầu</h2>
+                        <p class="des-light">Chuyên phát triển, gia công và thiết kế phần mềm, cung cấp các ứng...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="course main-page">
+            <div class="course-content">
+                <div class="content-top text-left">
+                    <button class="button button-rounded">Course</button>
+                    <h2 class="title-light">Free course</h2>
+                    <div class="desc">
+                        <p class="des-light">Chuyên phát triển, gia công và thiết kế phần mềm, cung cấp các ứng dụng trí tuệ nhân tạo thông minh nhằm tối ưu hóa mọi quy trình làm việc</p>
+                    </div>
+                </div>
+
+                <div class="content-bottom">
+                    <div class="main-content">
+                        <div class="icon">
+                            <div class="list-box countdown">
+                                <div class="box hours">
+                                    <span>01</span>
+                                </div>
+                                <div class="box minutes">
+                                    <span>54</span>
+                                </div>
+                                <div class="box seconds">
+                                    <span>10</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3 class="title-light">Free course: training in using AI</h3>
+                            <p class="des-light">Chuyên phát triển, gia công và thiết kế phần mềm, cung cấp các ứng dụng trí tuệ nhân tạo thông minh nhằm tối ưu hóa mọi quy trình làm việc</p>
+                        </div>
+                        <div class="view-more">
+                            <button class="button-view-more button">
+                                <span>View more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
+                                    <path d="M12.0703 1.15552L0.929688 12.2962" stroke="#F5F5F5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1.80031 1.15552L12.0703 1.15552L12.0703 11.4255" stroke="#F5F5F5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="main-content">
+                        <div class="icon">
+                            <div class="list-box countdown">
+                                <div class="box hours">
+                                    <span>01</span>
+                                </div>
+                                <div class="box minutes">
+                                    <span>54</span>
+                                </div>
+                                <div class="box seconds">
+                                    <span>10</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3 class="title-light">Free course: training in using AI</h3>
+                            <p class="des-light">Chuyên phát triển, gia công và thiết kế phần mềm, cung cấp các ứng dụng trí tuệ nhân tạo thông minh nhằm tối ưu hóa mọi quy trình làm việc</p>
+                        </div>
+                        <div class="view-more">
+                            <button class="button-view-more button">
+                                <span>View more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
+                                    <path d="M12.0703 1.15552L0.929688 12.2962" stroke="#F5F5F5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1.80031 1.15552L12.0703 1.15552L12.0703 11.4255" stroke="#F5F5F5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="main-content">
+                        <div class="icon">
+                            <div class="list-box countdown">
+                                <div class="box hours">
+                                    <span>01</span>
+                                </div>
+                                <div class="box minutes">
+                                    <span>54</span>
+                                </div>
+                                <div class="box seconds">
+                                    <span>10</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3 class="title-light">Free course: training in using AI</h3>
+                            <p class="des-light">Chuyên phát triển, gia công và thiết kế phần mềm, cung cấp các ứng dụng trí tuệ nhân tạo thông minh nhằm tối ưu hóa mọi quy trình làm việc</p>
+                        </div>
+                        <div class="view-more">
+                            <button class="button-view-more button">
+                                <span>View more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
+                                    <path d="M12.0703 1.15552L0.929688 12.2962" stroke="#F5F5F5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1.80031 1.15552L12.0703 1.15552L12.0703 11.4255" stroke="#F5F5F5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div include-html="contact-us.html" id="contact-us" class="main-page"></div>
+    </div>
+
+    <div include-html="footer.html" id="footer"></div>
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<!--<script src="js/jquery-2.2.4.min.js"></script>-->
+<script src="js/main.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

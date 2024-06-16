@@ -1,0 +1,335 @@
+.maxcom-tech {
+  .about-us {
+    padding-top: 0 !important;
+  }
+
+  .production {
+    padding: 90px 20px;
+  }
+
+  #contact-us {
+    padding: 0 20px 90px;
+  }
+
+  .new-maxcom, .news {
+    padding: 0 20px;
+  }
+
+  .out-team-tech {
+    display: flex;
+    gap: 50px;
+    @media only screen and (max-width: 1050px) {
+      width: 70%;
+      flex-direction: column;
+      padding: 0 20px;
+    }
+    .content-left {
+      width: 50%;
+      @media only screen and (max-width: 1050px) {
+        width: 100%;
+      }
+      &--top {
+        button {
+          padding: 10px 20px;
+          margin-bottom: 15px;
+        }
+
+        h2 {
+          color: $title-color;
+          font-size: 42px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 15px;
+          width: fit-content;
+        }
+
+        .desc {
+          width: 100%;
+          flex-shrink: 0;
+          margin-bottom: 5px;
+
+          p {
+            width: 100%;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+          }
+        }
+      }
+      &--bottom {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+      }
+    }
+
+    .content-right {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+      @media only screen and (max-width: 1050px) {
+        width: 100%;
+        padding-top: 0;
+      }
+      padding-top: 40px;
+    }
+  }
+
+  .testimonials {
+    position: relative;
+    z-index: 10;
+    max-width: 994px !important;
+    display: flex;
+    flex-direction: row;
+    //margin-bottom: 90px !important;
+    gap: 20px;
+    padding: 90px 0;
+    @media screen and (max-width: 1040px) {
+      flex-direction: column;
+      padding: 0 20px;
+    }
+    .content-top {
+      width: 40%;
+      @media screen and (max-width: 1040px) {
+        width: 100%;
+      }
+      .text-left {
+
+        button {
+          padding: 10px 20px;
+          margin-bottom: 15px;
+        }
+
+        h2 {
+          color: $title-color;
+          font-size: 42px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 15px;
+          width: fit-content;
+        }
+
+        .desc {
+          width: 100%;
+          flex-shrink: 0;
+          margin-bottom: 5px;
+
+          p {
+            width: 100%;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+          }
+        }
+      }
+    }
+
+    .review {
+      padding-top: 20px;
+      width: 60%;
+      @media screen and (max-width: 1040px) {
+        width: 100%;
+      }
+      .item {
+        width: 100%;
+      }
+    }
+  }
+
+  .ecommerce {
+    max-width: 994px !important;
+    border: 1px solid var(--bg-white);
+    background: var(--bg-contact);
+    backdrop-filter: blur(15px);
+    padding: 33px 100px 0;
+    border-radius: 20px;
+    @media screen and (max-width: 768px) {
+      padding: 33px 40px 0;
+    }
+    .content-top {
+      text-align: center;
+      width: 100%;
+      @media screen and (max-width: 768px) {
+      }
+      img {
+        width: 100%;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        margin: 0 auto 5px;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        max-width: 400px;
+      }
+
+      .desc p {
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+        width: 100%;
+        flex-shrink: 0;
+        margin: 0 auto 5px;
+      }
+    }
+  }
+
+  .join {
+    max-width: 996px;
+    background: var(--Second-Color, #04F);
+    border-radius: 30px;
+    padding: 20px 30px;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .content-left {
+      width: 50%;
+      &--title {
+        width: 90%;
+        color: var(--Stocke1, #FFF);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 15px;
+      }
+
+      &--sub {
+        color: var(--Color-6, #F5F5F5);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+    }
+
+    .content-right {
+      .view-more {
+        .button-view-more {
+          width: fit-content;
+          padding: 20px 30px;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          background-color: #F5f5f5;
+          color: var(--Second-Color, #04F);
+        }
+      }
+    }
+  }
+
+  .object {
+    margin-top: 90px;
+    max-width: 994px !important;
+    border: 1px solid var(--bg-white);
+    background: var(--bg-contact);
+    backdrop-filter: blur(15px);
+    padding: 30px 100px;
+    border-radius: 20px;
+    flex-shrink: 0;
+    @media screen and (max-width: 768px) {
+      padding: 30px 40px 30px;
+    }
+    .content-top {
+      text-align: center;
+      width: 100%;
+
+      button {
+        padding: 10px 20px;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        margin: 0 auto 5px;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        max-width: 400px;
+      }
+
+      .desc p {
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+        width: 100%;
+        flex-shrink: 0;
+        margin: 0 auto 5px;
+        margin-bottom: 30px;
+      }
+
+      .list-block {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .block {
+          border-radius: 10px;
+          border: 1px solid var(--bg-white);
+          background: rgba(255, 255, 255, 0.10);
+          backdrop-filter: blur(15px);
+          display: flex;
+          padding: 13px 15px;
+          flex-direction: row;
+          align-items: center;
+          gap: 20px;
+          width: 100%;
+          img {
+
+          }
+
+          p {
+            color: var(--color-six);
+            font-family: Unbounded;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+
+  .aigen-phone {
+    max-height: 290px;
+
+    .review {
+      .item {
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+
+}
+
+.no-padding-top {
+  padding-top: 0 !important;
+}
+
+.padding-top {
+  padding-top: 90px !important;
+}
