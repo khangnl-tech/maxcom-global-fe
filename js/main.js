@@ -597,7 +597,6 @@ includeHTML();
  * Utility function to update the button state and aria-label.
  */
 function updateButton({ buttonEl, isDark }) {
-    console.log(124124)
     const logoLinks = document.querySelectorAll('.logo-link');
     const logoLinks2 = document.querySelectorAll('.logo-link2');
     const buttonRounded = document.querySelectorAll('.button-rounded');
@@ -631,6 +630,19 @@ function updateButton({ buttonEl, isDark }) {
  */
 function updateThemeOnHtmlEl({ theme }) {
     document.querySelector("html").setAttribute("data-theme", theme);
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+    if (theme === "dark") {
+        sunIcon.style.backgroundColor = 'transparent';
+        sunIcon.style.color = 'white';
+        moonIcon.style.backgroundColor = 'white';
+        moonIcon.style.color = 'blue';
+    } else {
+        sunIcon.style.backgroundColor = 'white';
+        sunIcon.style.color = 'blue';
+        moonIcon.style.backgroundColor = 'transparent';
+        moonIcon.style.color = 'black';
+    }
 }
 
 /**
@@ -730,3 +742,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// social block
+
+document.addEventListener('DOMContentLoaded', function () {
+    const mainButton = document.getElementById('mainButton');
+    const socialList = document.getElementById('socialList');
+    const socialListBlock = document.getElementById('social-list-block');
+
+    mainButton.addEventListener('click', function () {
+        if (socialList.style.height === '0px' || socialList.style.height === '') {
+            // Lấy chiều cao tổng của nội dung socialList
+            const socialListHeight = socialList.scrollHeight;
+            socialList.style.height = `${socialListHeight}px`;
+            socialListBlock.classList?.add('active');
+            socialListBlock.padding = '5px';  // Sửa lỗi: phải là socialListBlock.style.padding
+            socialListBlock.boxShadow = 'none';  // Sửa lỗi: phải là socialListBlock.style.boxShadow
+            socialListBlock.backgroundColor = 'rgba(245, 245, 245, 0.60)';  // Sửa lỗi: phải là socialListBlock.style.backgroundColor
+        } else {
+            socialListBlock.classList?.remove('active');
+            socialList.style.height = '0px';
+            socialListBlock.padding = '0';
+            socialListBlock.boxShadow = '5px 2px 22.1px 0px rgba(0, 68, 255, 0.20)';
+            socialListBlock.backgroundColor = 'transparent';  // Sửa lỗi: phải là socialListBlock.style.backgroundColor
+        }
+    });
+
+
+    // Ensure the social list is hidden when the page loads
+    socialList.style.height = '0px';
+});

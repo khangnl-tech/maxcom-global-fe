@@ -3,14 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark/Light Mode Toggle</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Toggle Switch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .social-button {
+            display: block;
+            margin: 5px 0;
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 50%;
+            background-color: white;
+            padding: 5px;
+        }
+
+        .main-button {
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .social-button > img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .main-button:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-list-block {
+            width: fit-content;
+            height: fit-content;
+            padding: 5px;
+            border-radius: 50px;
+            background: rgba(245, 245, 245, 0.60);
+            overflow: hidden;
+            box-shadow: 5px 2px 22.1px 0px rgba(0, 68, 255, 0.20);
+            backdrop-filter: blur(10px);
+            margin-top: 30px;
+        }
+
+        .social-list {
+            width: fit-content;
+            height: fit-content;
+            /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+            background-color: white;
+            border-radius: 50px;
+            overflow: hidden;
+            transition: height 0.5s ease-out;
+        }
+    </style>
 </head>
 <body>
-<button id="theme-toggle">
-    <span id="sun-icon">☀️</span>
-    <span id="moon-icon">🌙</span>
-</button>
-<script src="./js/main.js"></script>
+<div class="social-container">
+    <button id="mainButton" class="social-button main-button">
+        <img src="img/social.png" alt="">
+    </button>
+    <div class="social-list-block">
+        <div id="socialList" class="social-list">
+            <button class="social-button zalo">
+                <img src="img/zalo.png" alt="">
+            </button>
+            <button class="social-button tiktok">
+                <img src="img/tiktok.png" alt="">
+            </button>
+            <button class="social-button youtube">
+                <img src="img/youtube.png" alt="">
+            </button>
+            <button class="social-button messenger">
+                <img src="img/messenger.png" alt="">
+            </button>
+            <button class="social-button flag">
+                <img src="img/flag.png" alt="">
+            </button>
+        </div>
+    </div>
+</div>
+<script>
+
+
+
+</script>
 </body>
 </html>

@@ -9,20 +9,22 @@
     justify-content: space-between;
 
     .logo-img {
-      width: 126.667px;
-      height: 20px;
+      //width: 126.667px;
+      //height: 20px;
+      z-index: 9999;
     }
 
     .menu-box {
       //width: 836px;
       height: 47px;
       display: block;
+      z-index: 9999;
 
       .menu-list {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 40px;
+        gap: 30px;
 
         .menu-item {
           position: relative;
@@ -39,11 +41,18 @@
             }
           }
 
-          .search-icon svg{
-            width: 20px;
-            height: 20px;
-            flex-shrink: 0;
-            cursor: pointer;
+          .search-icon {
+            i {
+              font-size: 18px;
+              font-weight: 300;
+              color: var(--title-color);
+            }
+            svg{
+              width: 20px;
+              height: 20px;
+              flex-shrink: 0;
+              cursor: pointer;
+            }
           }
 
           .menu-item-child {
