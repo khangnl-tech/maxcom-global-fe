@@ -601,6 +601,8 @@ function updateButton({ buttonEl, isDark }) {
     const logoLinks2 = document.querySelectorAll('.logo-link2');
     const buttonRounded = document.querySelectorAll('.button-rounded');
     const newCta = isDark ? "Change to light theme" : "Change to dark theme";
+    const iconSearch = document.getElementById('search-icon');
+
     buttonEl.setAttribute("aria-label", newCta);
     if (isDark) {
         buttonEl.classList.add("active");
@@ -623,6 +625,15 @@ function updateButton({ buttonEl, isDark }) {
             img.src = '/img/logo-maxcom-light.svg';
         }
     });
+    const img = iconSearch?.querySelector('img');
+    if(img) {
+        if (!isDark) {
+            img.src = '/img/search-icon-black.svg';
+        } else {
+            img.src = '/img/search-icon-white.svg';
+        }
+    }
+
 }
 
 /**
