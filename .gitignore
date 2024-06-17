@@ -85,7 +85,3 @@ sw.*
 
 # Vim swap files
 *.swp
-
-#css build
-css/style.css
-css/style.css.map
