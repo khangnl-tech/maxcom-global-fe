@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/Q-Peo/maxcom_global.git",
-  "author": "quanluu <quanlv06@gmail.com>",
+  "author": "",
   "license": "MIT",
   "devDependencies": {
     "sass": "^1.77.5"
   },
   "scripts": {
-    "sass": "sass --watch scss:css"
+    "sass": "sass --watch scss:css",
+    "build:sass": "yarn sass src/scss:src/css",
+    "build": "yarn build:sass",
+    "start": "serve dist"
   }
 }
