@@ -32,6 +32,7 @@
         position: relative;
         padding-left: 1.5em;
         margin-bottom: 0.5em;
+        z-index: 999;
 
         &::before {
           content: '';
@@ -40,7 +41,7 @@
           top: 0.5em;
           width: 0.3em;
           height: 0.3em;
-          background-color: black;
+          background-color: var(--footer-des);
           border-radius: 50%;
         }
       }
