@@ -1,3 +1,5 @@
+@import "variables";
+
 #footer {
   background: var(--bg-footer);
   backdrop-filter: blur(25px);
@@ -166,7 +168,7 @@
 }
 
 .button-number {
-  @extend button
+  @extend button !optional;
 
 }
 

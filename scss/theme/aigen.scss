@@ -173,6 +173,82 @@
     }
   }
 
+  .content-bottom {
+    .card-content {
+      border-radius: 20px 20px 0px 0px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+
+      .head {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #A1A1A1;
+
+        .title {
+          color: #1E1E1E;
+          text-align: center;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          margin-bottom: 0;
+        }
+
+        .list-icon {
+          display: flex;
+          align-items: center;
+
+          img {
+            border-radius: 50px;
+            border: 2px solid #FFF;
+            background: lightgray 50% / cover no-repeat;
+            margin-left: -12px;
+            width: 30px;
+            height: 30px;
+          }
+
+          .icon-plus {
+            margin-left: -12px;
+          }
+        }
+      }
+
+      .list-train {
+        padding: 17px 18px 18px 15px;
+
+        .item-train {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          gap: 10px;
+          border-radius: 10px;
+          background: #EAEFFF;
+          margin-bottom: 10px;
+
+          img {
+            width: 40px;
+            height: 40px;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .desc {
+            color: #1E1E1E;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 .aigen-phone {
