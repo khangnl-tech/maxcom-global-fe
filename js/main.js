@@ -57,7 +57,6 @@ function includeHTML() {
 }
 
 // Call the function to include HTML
-includeHTML();
 
 (function ($) {
     "use strict";
@@ -598,8 +597,6 @@ includeHTML();
  */
 function updateButton({ buttonEl, isDark }) {
     const logoLinks = document.querySelectorAll('.logo-link');
-    const logoLinks2 = document.querySelectorAll('.logo-link2');
-    const buttonRounded = document.querySelectorAll('.button-rounded');
     const newCta = isDark ? "Change to light theme" : "Change to dark theme";
     const iconSearch = document.getElementById('search-icon');
 
@@ -610,14 +607,6 @@ function updateButton({ buttonEl, isDark }) {
         buttonEl.classList.remove("active");
     }
     logoLinks.forEach(link => {
-        const img = link.querySelector('img');
-        if (isDark) {
-            img.src = '/img/logo-maxcom-dark.svg';
-        } else {
-            img.src = '/img/logo-maxcom-light.svg';
-        }
-    });
-    logoLinks2.forEach(link => {
         const img = link.querySelector('img');
         if (isDark) {
             img.src = '/img/logo-maxcom-normal.svg';
@@ -634,6 +623,36 @@ function updateButton({ buttonEl, isDark }) {
         }
     }
 
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    includeHTML();
+    // Fetch and include footer.html content
+    fetch('footer.html')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+            updateLogoLinks();
+        })
+        .catch(error => console.error('Error loading HTML:', error));
+});
+
+function updateLogoLinks() {
+    const logoLinks = document.querySelectorAll('.logo-link');
+    const localStorageTheme = localStorage.getItem("theme");
+    logoLinks.forEach(link => {
+        const img = link.querySelector('img');
+        if (localStorageTheme === "dark") {
+            img.src = '/img/logo-maxcom-normal.svg';
+        } else {
+            img.src = '/img/logo-maxcom-light.svg';
+        }
+    });
 }
 
 /**
@@ -781,4 +800,35 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Ensure the social list is hidden when the page loads
     socialList.style.height = '0px';
+});
+
+// JavaScript
+// window.addEventListener('scroll', () => {
+//     const cards = document.querySelectorAll('.shared-by-student .list-content .item');
+//     const triggerBottom = window.innerHeight / 5 * 4;
+//
+//     cards.forEach(card => {
+//         const cardTop = card.getBoundingClientRect().top;
+//         if(cardTop < triggerBottom) {
+//             card.style.animation = 'fadeIn 1s ease-in-out forwards';
+//         }
+//     });
+// });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animation = 'fadeIn 1s ease-in-out forwards';
+                observer.unobserve(entry.target);  // Stop observing the current target
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    const items = document.querySelectorAll('.list-content .item');
+    items.forEach(item => {
+        observer.observe(item);
+    });
 });

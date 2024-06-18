@@ -398,7 +398,7 @@
       .item {
         padding: 35px 34px 0 34px;
         border-radius: 30px;
-        border: 1px solid #FFF;
+        border: 1px solid var(--border-color);
         background: rgba(255, 255, 255, 0.10);
         backdrop-filter: blur(15px);
         margin-top: 5px;
@@ -434,6 +434,83 @@
             p {
               max-width: 397px;
               margin: 0 auto;
+            }
+          }
+        }
+
+        .content-bottom {
+          .card-content {
+            border-radius: 20px 20px 0px 0px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+
+            .head {
+              display: flex;
+              padding: 20px;
+              justify-content: space-between;
+              align-items: center;
+              border-bottom: 1px solid #A1A1A1;
+
+              .title {
+                color: #1E1E1E;
+                text-align: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 0;
+              }
+
+              .list-icon {
+                display: flex;
+                align-items: center;
+
+                img {
+                  border-radius: 50px;
+                  border: 2px solid #FFF;
+                  background: lightgray 50% / cover no-repeat;
+                  margin-left: -12px;
+                  width: 30px;
+                  height: 30px;
+                }
+
+                .icon-plus {
+                  margin-left: -12px;
+                }
+              }
+            }
+
+            .list-train {
+              padding: 30px 19px 11px 18px;
+              min-height: 200px;
+
+              .item-train {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                gap: 10px;
+                border-radius: 10px;
+                background: #EAEFFF;
+                margin-bottom: 10px;
+
+                img {
+                  width: 40px;
+                  height: 40px;
+                }
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
+
+                .desc {
+                  color: #1E1E1E;
+                  text-align: center;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: normal;
+                }
+              }
             }
           }
         }
@@ -542,8 +619,22 @@
         .list-content {
           column-count: 3;
           gap: 20px;
+          animation-name: fadeIn;
+          animation-fill-mode: both;
+          animation-duration: 1s;
+
+          //@keyframes fadeIn {
+          //  from { opacity: 0; transform: translateY(20px); }
+          //  to { opacity: 1; transform: translateY(0); }
+          //}
 
           .item {
+            opacity: 0;
+            @keyframes fadeIn {
+              from { opacity: 0; transform: translateY(20px); }
+              to { opacity: 1; transform: translateY(0); }
+            }
+
             border-radius: 30px;
             border: 1px solid var(--btn-bar);
             background: rgba(255, 255, 255, 0.10);
@@ -706,7 +797,41 @@
 
         .content-bottom {
           .item {
+            margin-top: 30px;
+            width: 100%;
             border-radius: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            div {
+              >img {
+                width: 25px;
+              }
+            }
+            .item-top {
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 300;
+              color: var(--Title-Color, #1E1E1E);
+              line-height: normal;
+            }
+
+            .item-bottom {
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              gap: 10px;
+              img {
+                width: 65px;
+              }
+              &--des {
+                display: flex;
+                flex-direction: column;
+              }
+            }
           }
         }
       }
@@ -726,3 +851,84 @@
   }
 }
 
+
+//css maxcom ecom
+section.main-page.ecommerce.maxcom-ecom {
+  max-width: 992px;
+
+  .content-bottom {
+    .card-content {
+      border-radius: 20px 20px 0px 0px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+
+      .head {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #A1A1A1;
+
+        .title {
+          color: #1E1E1E;
+          text-align: center;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          margin-bottom: 0;
+        }
+
+        .list-icon {
+          display: flex;
+          align-items: center;
+
+          img {
+            border-radius: 50px;
+            border: 2px solid #FFF;
+            background: lightgray 50% / cover no-repeat;
+            margin-left: -12px;
+            width: 30px;
+            height: 30px;
+          }
+
+          .icon-plus {
+            margin-left: -12px;
+          }
+        }
+      }
+
+      .list-train {
+        padding: 17px 18px 18px 15px;
+
+        .item-train {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          gap: 10px;
+          border-radius: 10px;
+          background: #EAEFFF;
+          margin-bottom: 10px;
+
+          img {
+            width: 40px;
+            height: 40px;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .desc {
+            color: #1E1E1E;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

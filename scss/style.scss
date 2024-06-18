@@ -231,8 +231,9 @@ p {
 
   // chat bot
   .chatbot {
+    position: relative;
+    z-index: 20;
     min-height: 700px;
-    z-index: 10;
     height: fit-content;
     .chatbot-head {
       display: flex;
@@ -327,7 +328,7 @@ p {
       }
 
       &--bottom {
-        width: 451px;
+        width: fit-content;
         height: 57px;
         flex-shrink: 0;
         text-align: left;
@@ -1728,4 +1729,8 @@ p {
       overflow: hidden;
     }
   }
+}
+
+.text-blue {
+  color: #0044FF;
 }
