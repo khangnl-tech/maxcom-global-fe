@@ -123,6 +123,8 @@
       line-height: 18px;
     }
     &--connect {
+      position: relative;
+      z-index: 10;
       padding: 0;
       margin: 0;
 
