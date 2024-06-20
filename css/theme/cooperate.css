@@ -65,6 +65,9 @@
   max-width: 100%;
   width: 100%;
 }
+.cooperate .main-page--content .container-image .signature {
+  width: 50%;
+}
 .cooperate .main-page--content .parner {
   padding-bottom: 0;
 }
@@ -122,3 +125,5 @@
 .mb-30 {
   margin-bottom: 30px;
 }
+
+/*# sourceMappingURL=cooperate.css.map */

@@ -868,6 +868,9 @@
   max-width: 100%;
   width: 100%;
 }
+.cooperate .main-page--content .container-image .signature {
+  width: 50%;
+}
 .cooperate .main-page--content .parner {
   padding-bottom: 0;
 }
@@ -1831,7 +1834,7 @@
 }
 .home-page #maxcom-edu .content-bottom .item .content {
   margin-top: 250px;
-  height: 500px;
+  height: 350px;
 }
 .home-page #maxcom-edu .content-bottom .owl-nav {
   position: absolute;
@@ -2124,6 +2127,8 @@
   margin-bottom: 24px;
 }
 .home-page .shared-by-student .main-content .content-bottom .list-content .item .head .image img {
+  width: 45px;
+  height: 45px;
   border-radius: 65.262px;
   border: 3px solid var(--Stocke1, #FFF);
   background: lightgray -0.418px -0.324px/109.143% 109.198% no-repeat, #D9D9D9;
@@ -2334,6 +2339,54 @@
 .home-page .testimonials .main-content .review .content-bottom .item .item-bottom--des {
   display: flex;
   flex-direction: column;
+}
+.home-page .testimonials .main-content .review .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.home-page .testimonials .main-content .reason-container {
+  width: calc(60% - 10px);
+  margin-top: 36px;
+}
+.home-page .testimonials .main-content .reason-container .content-bottom .item {
+  margin-top: 30px;
+  width: 100%;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.home-page .testimonials .main-content .reason-container .content-bottom .item div > img {
+  width: 25px;
+}
+.home-page .testimonials .main-content .reason-container .content-bottom .item .item-top {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  color: var(--Title-Color, #1E1E1E);
+  line-height: normal;
+}
+.home-page .testimonials .main-content .reason-container .content-bottom .item .item-bottom {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+}
+.home-page .testimonials .main-content .reason-container .content-bottom .item .item-bottom img {
+  width: 65px;
+}
+.home-page .testimonials .main-content .reason-container .content-bottom .item .item-bottom--des {
+  display: flex;
+  flex-direction: column;
+}
+.home-page .testimonials .main-content .reason-container .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 @media (max-width: 768px) {
   .home-page .testimonials .main-content {
@@ -3812,7 +3865,7 @@ p {
 .home-page .out-team .content-bottom .item .content {
   text-align: left;
   margin-top: 200px;
-  height: 500px;
+  height: 420px;
   flex-shrink: 0;
   border-radius: 30px;
   border: 1px solid rgba(0, 68, 255, 0.2);
@@ -4599,3 +4652,5 @@ p {
 .text-blue {
   color: #0044FF;
 }
+
+/*# sourceMappingURL=style.css.map */
