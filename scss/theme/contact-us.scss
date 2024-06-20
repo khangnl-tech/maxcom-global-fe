@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 #contact-us {
   margin-bottom: 90px;
@@ -65,6 +65,11 @@
         flex-direction: column;
         gap: 15px;
         padding-top: 62px;
+
+        label {
+          z-index: 999;
+        };
+
         .input {
           display: flex;
           width: 100%;
@@ -81,6 +86,11 @@
           display: flex;
           gap: 15px;
           align-items: center;
+          z-index: 999;
+          .button-view-more {
+            width: unset;
+          }
+
           &--btn {
             display: flex;
             width: fit-content;

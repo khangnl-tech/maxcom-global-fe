@@ -29,6 +29,8 @@
   --btn-get-start: #0044FF;
   --text-get-start: #F5F5F5;
   --border-color: rgba(0, 68, 255, 0.2);
+  --btn-view-hover: #01F5B3;
+  --btn-view-hover-2: #0044FF;
 }
 
 [data-theme=dark] {
@@ -60,6 +62,8 @@
   --btn-get-start: #f5f5f5;
   --text-get-start: #000;
   --border-color: #fff;
+  --btn-view-hover: #01F5B3;
+  --btn-view-hover-2: #01F5B3;
 }
 
 /*--------------------------- Fonts ----------------------*/
@@ -156,7 +160,11 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  max-width: 100%;
+  text-align: right;
+  max-width: 35%;
+}
+#footer .footer-bottom--img2 img {
+  width: 100%;
 }
 @media only screen and (max-width: 1050px) {
   #footer .footer-bottom--img1 img, #footer .footer-bottom--img2 img {
@@ -173,8 +181,6 @@
   line-height: 18px;
 }
 #footer .footer-bottom--connect {
-  position: relative;
-  z-index: 10;
   padding: 0;
   margin: 0;
 }
@@ -255,5 +261,3 @@
     justify-content: center;
   }
 }
-
-/*# sourceMappingURL=footer.css.map */

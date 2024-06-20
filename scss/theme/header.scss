@@ -1,7 +1,13 @@
-@import "variables";
+@import 'variables';
 
 //header
 #header {
+  position: fixed;
+  z-index: 99999;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  box-sizing: border-box;
   .nav-bar {
     display: inline-flex;
     padding: 20px 0;
@@ -123,6 +129,13 @@
           font-style: normal;
           font-weight: 400;
           line-height: normal;
+          background-color: #0044FF;
+          border-color: #0044FF;
+
+          &:hover {
+            background: var(--btn-view-hover);
+            border-color: var(--btn-view-hover);
+          }
         }
       }
     }

@@ -160,10 +160,36 @@ p {
   padding: 20px 30px;
   gap: 15px;
   border-radius: 50px;
-  background: $second-color;
+  background-color: $second-color;
 
   flex-shrink: 0;
   opacity: 0.9;
+
+  &:hover {
+    background-color: var(--btn-view-hover);
+    text-align: left;
+  }
+}
+
+.view-more--btn:hover {
+  background-color: var(--btn-view-hover);
+}
+
+.title-head-custom {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: var(--second-color);
+  border: 2px solid var(--title-border-1);
+
+  color: $color-six;
+  width: max-content;
+  font-style: normal;
+  font-weight: 300;
+
+  line-height: normal;
+  outline: none;
+  font-size: 14px;
+  margin-bottom: 0;
 }
 
 .home-page {
@@ -231,9 +257,8 @@ p {
 
   // chat bot
   .chatbot {
-    position: relative;
-    z-index: 20;
     min-height: 700px;
+    z-index: 10;
     height: fit-content;
     .chatbot-head {
       display: flex;
@@ -328,7 +353,7 @@ p {
       }
 
       &--bottom {
-        width: fit-content;
+        width: 451px;
         height: 57px;
         flex-shrink: 0;
         text-align: left;
@@ -344,8 +369,8 @@ p {
           gap: 10px;
 
           .button-view-more {
-            background-color: var(--btn-get-start) !important;
-            color: var(--text-get-start);
+            //background-color: var(--btn-get-start) !important;
+            //color: var(--text-get-start);
             z-index: 100;
           }
 
@@ -410,6 +435,8 @@ p {
     }
 
     .container {
+      position: relative;
+      z-index: 20;
       display: flex;
       gap: 20px;
       justify-content: center;
@@ -474,6 +501,11 @@ p {
               line-height: normal;
               text-wrap: nowrap;
             }
+
+            &:hover {
+              background-color: var(--btn-view-hover-2);
+              color: #F5F5F5;
+            }
           }
         }
       }
@@ -528,18 +560,18 @@ p {
         text-align: center;
 
         button {
-          padding: 10px 20px;
-          border-radius: 50px;
-          background: var(--second-color);
-          border: 2px solid var(--title-border-1);
-          color: $white;
-          width: max-content;
-          margin: auto;
-          font-style: normal;
-          font-weight: 300;
-
-          line-height: normal;
-          outline: none;
+          //padding: 10px 20px;
+          //border-radius: 50px;
+          //background: var(--second-color);
+          //border: 2px solid var(--title-border-1);
+          //color: $white;
+          //width: max-content;
+          //margin: auto;
+          //font-style: normal;
+          //font-weight: 300;
+          //
+          //line-height: normal;
+          //outline: none;
         }
       }
       &--head {
@@ -639,6 +671,7 @@ p {
           font-weight: 400;
           line-height: normal;
           margin-bottom: 15px;
+          margin-top: 15px;
         }
 
         .desc {
@@ -970,7 +1003,7 @@ p {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        margin-bottom: 15px;
+        margin: 15px 0;
       }
 
     }
@@ -1073,6 +1106,7 @@ p {
           font-weight: 400;
           line-height: normal;
           margin-bottom: 15px;
+          margin-top: 15px;
         }
 
         .desc {
@@ -1223,6 +1257,7 @@ p {
           font-weight: 400;
           line-height: normal;
           margin-bottom: 15px;
+          margin-top: 15px;
         }
 
         .desc {

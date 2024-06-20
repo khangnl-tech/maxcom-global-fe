@@ -29,6 +29,8 @@
   --btn-get-start: #0044FF;
   --text-get-start: #F5F5F5;
   --border-color: rgba(0, 68, 255, 0.2);
+  --btn-view-hover: #01F5B3;
+  --btn-view-hover-2: #0044FF;
 }
 
 [data-theme=dark] {
@@ -60,6 +62,8 @@
   --btn-get-start: #f5f5f5;
   --text-get-start: #000;
   --border-color: #fff;
+  --btn-view-hover: #01F5B3;
+  --btn-view-hover-2: #01F5B3;
 }
 
 /*--------------------------- Fonts ----------------------*/
@@ -127,6 +131,9 @@
   gap: 15px;
   padding-top: 62px;
 }
+.contact-us .block-contact--input form label {
+  z-index: 999;
+}
 .contact-us .block-contact--input form .input {
   display: flex;
   width: 100%;
@@ -142,6 +149,10 @@
   display: flex;
   gap: 15px;
   align-items: center;
+  z-index: 999;
+}
+.contact-us .block-contact--input form .view-more .button-view-more {
+  width: unset;
 }
 .contact-us .block-contact--input form .view-more--btn {
   display: flex;
@@ -162,5 +173,3 @@
   font-weight: 400;
   line-height: normal;
 }
-
-/*# sourceMappingURL=contact-us.css.map */

@@ -10,8 +10,6 @@
   },
   "scripts": {
     "sass": "sass --watch scss:css",
-    "build:sass": "yarn sass src/scss:src/css",
-    "build": "yarn build:sass",
-    "start": "serve dist"
+    "build:sass": "sass scss:css --no-source-map"
   }
 }

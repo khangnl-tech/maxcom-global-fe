@@ -42,7 +42,8 @@
   max-width: 1104px;
   margin: 0 auto;
   padding-bottom: 90px;
-
+  z-index: 10;
+  position: relative;
   .main-content {
     display: flex;
     align-items: start;
@@ -350,4 +351,13 @@
       }
     }
   }
+}
+
+.aigen-x.maxcom-tech #contact-us {
+  padding-bottom: 0;
+}
+
+.aigen-x .title-head-custom {
+  padding: 10px 20px;
+  margin-bottom: 15px ;
 }

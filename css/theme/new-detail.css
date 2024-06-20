@@ -29,6 +29,8 @@
   --btn-get-start: #0044FF;
   --text-get-start: #F5F5F5;
   --border-color: rgba(0, 68, 255, 0.2);
+  --btn-view-hover: #01F5B3;
+  --btn-view-hover-2: #0044FF;
 }
 
 [data-theme=dark] {
@@ -60,6 +62,8 @@
   --btn-get-start: #f5f5f5;
   --text-get-start: #000;
   --border-color: #fff;
+  --btn-view-hover: #01F5B3;
+  --btn-view-hover-2: #01F5B3;
 }
 
 /*--------------------------- Fonts ----------------------*/
@@ -240,5 +244,3 @@
 .mb-20 {
   margin-bottom: 20px;
 }
-
-/*# sourceMappingURL=new-detail.css.map */

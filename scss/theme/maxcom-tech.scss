@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 .maxcom-tech {
   .about-us {
@@ -44,6 +44,7 @@
           line-height: normal;
           margin-bottom: 15px;
           width: fit-content;
+          margin-top: 15px;
         }
 
         .desc {
@@ -78,7 +79,7 @@
             margin-bottom: 15px;
 
             p {
-              color: var(--text-color-3);
+              color: #1E1E1E;
               text-align: center;
               font-size: 14px;
               font-style: normal;
@@ -136,6 +137,7 @@
           line-height: normal;
           margin-bottom: 15px;
           width: fit-content;
+          margin-top: 15px;
         }
 
         .desc {
@@ -385,4 +387,8 @@
 
 .padding-top {
   padding-top: 90px !important;
+}
+.ecom-custom.maxcom-tech #contact-us,
+.maxcom-tech-custom.maxcom-tech #contact-us {
+  padding-bottom: 0;
 }

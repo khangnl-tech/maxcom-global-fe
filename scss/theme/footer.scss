@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 #footer {
   background: var(--bg-footer);
@@ -99,8 +99,12 @@
       position: absolute;
       bottom: 0;
       right: 0;
+      text-align: right;
+      max-width: 35%;
 
-      max-width: 100%;
+      img {
+        width: 100%;
+      }
     }
     @media only screen and (max-width: 1050px) {
       &--img1,
@@ -123,8 +127,6 @@
       line-height: 18px;
     }
     &--connect {
-      position: relative;
-      z-index: 10;
       padding: 0;
       margin: 0;
 
@@ -171,7 +173,6 @@
 
 .button-number {
   @extend button !optional;
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1050px){
