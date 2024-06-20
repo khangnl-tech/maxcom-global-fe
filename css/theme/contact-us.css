@@ -1,0 +1,166 @@
+/*--------------------------- Color variations ----------------------*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:500,700|Roboto:400,500");
+[data-theme=light] {
+  --bg-white: #fff;
+  --second-color: #0044FF;
+  --second-color-2: #01F5B3;
+  --color-six: #1E1E1E;
+  --title-color: #1E1E1E;
+  --logo-color: #0A008C;
+  --title-color-2: #1E1E1E;
+  --bg-footer: rgba(71, 71, 71, 0.10);
+  --bg-contact: rgba(245, 245, 245, 0.30);
+  --bg-blue-dark: rgba(0, 68, 255, 0.20);
+  --text-gray: #A1A1A1;
+  --bg-btn-1: #0044FF;
+  --text-color-3: #F5F5F5;
+  --input-color: #F5F5F5;
+  --footer-des: #1E1E1E;
+  --border-color-1: #F5F5F5;
+  --border-color-2: #01F5B3;
+  --tab-active-1: #01F5B3;
+  --title-border-1: #0044FF;
+  --btn-color-2: #01F5B3;
+  --btn-bar: #000;
+  --text-menu: #F5F5F5;
+  --star-list: #000;
+  --liner-hidden: linear-gradient(180deg, rgba(255, 255, 255, 0) -16.22%, #F5F5F5 78.57%);
+  --btn-nav: #999999;
+  --btn-get-start: #0044FF;
+  --text-get-start: #F5F5F5;
+  --border-color: rgba(0, 68, 255, 0.2);
+}
+
+[data-theme=dark] {
+  --bg-white: #191345;
+  --second-color: transparent;
+  --second-color-2: #01F5B3;
+  --color-six: #F5F5F5;
+  --title-color: #F5f5f5;
+  --logo-color: #0A008C;
+  --title-color-2: #F5F5F5;
+  --bg-footer: rgba(71, 71, 71, 0.10);
+  --bg-contact: rgba(255, 255, 255, 0.10);
+  --bg-blue-dark: rgba(0, 68, 255, 0.20);
+  --text-gray: #F5f5f5;
+  --bg-btn-1: #01F5B3;
+  --text-color-3: #1E1E1E;
+  --input-color: #F5F5F5;
+  --footer-des: #8a8a8a;
+  --border-color-1: #4747471A;
+  --border-color-2: #F5F5F5;
+  --tab-active-1: #F5F5F5;
+  --title-border-1: #01F5B3;
+  --btn-color-2: #0044FF;
+  --btn-bar: #FFF;
+  --text-menu: #F5F5F5;
+  --star-list: #F5f5f5;
+  --liner-hidden: linear-gradient(180deg, rgba(47, 41, 94, 0) -16.22%, #2F2957 78.57%);
+  --btn-nav: transparent;
+  --btn-get-start: #f5f5f5;
+  --text-get-start: #000;
+  --border-color: #fff;
+}
+
+/*--------------------------- Fonts ----------------------*/
+#contact-us {
+  margin-bottom: 90px;
+}
+
+.contact-us {
+  max-width: 996px;
+  margin: auto;
+  border-radius: 50px;
+  border: 1px solid var(--bg-white);
+  background: var(--bg-contact);
+  backdrop-filter: blur(15px);
+  flex-shrink: 0;
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  height: fit-content;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+}
+@media only screen and (max-width: 1050px) {
+  .contact-us {
+    flex-direction: column;
+  }
+}
+.contact-us .block-contact--des {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-us .block-contact--des--head {
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  outline: none;
+}
+.contact-us .block-contact--des--title {
+  color: var(--title-color-2);
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 80%;
+}
+.contact-us .block-contact--des--description {
+  width: 100%;
+}
+.contact-us .block-contact--des--description p {
+  flex-shrink: 0;
+  color: var(--text-gray);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.contact-us .block-contact--input form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 62px;
+}
+.contact-us .block-contact--input form .input {
+  display: flex;
+  width: 100%;
+  padding: 19px 30px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  border: none;
+  background: var(--input-color);
+}
+.contact-us .block-contact--input form .view-more {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.contact-us .block-contact--input form .view-more--btn {
+  display: flex;
+  width: fit-content;
+  padding: 20px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 50px;
+  background: #0044FF;
+  flex-shrink: 0;
+  color: #F5F5F5;
+}
+.contact-us .block-contact--input form .view-more--des {
+  color: var(--text-gray);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*# sourceMappingURL=contact-us.css.map */
