@@ -15,4 +15,5 @@ function sendEmail() {
        console.log('FAILED...', error);
        alert('Failed to send email. Please try again.');
     });
+    window.alert("hello!");
 }

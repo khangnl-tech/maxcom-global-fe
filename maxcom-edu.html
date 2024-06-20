@@ -26,6 +26,8 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -1050,7 +1052,43 @@
             </div>
         </section> -->
 
-        <div include-html="contact-us.html" id="contact-us" class="main-page"></div>
+        <!-- <div include-html="contact-us.html" id="contact-us" class="main-page"></div> -->
+        <div class="contact-us" class="main-page" id="contact-us">
+            <div class="block-contact--des">
+                <div class="block-contact--des--head button button-rounded">
+                    Để lại thông tin liên hệ để được tư vấn miễn phí
+                </div>
+                <div class="block-contact--des--title">
+                    Tôi cần tư vấn thêm về sản phẩm và dịch vụ
+                </div>
+                <div class="block-contact--des--description">
+                    <p>Chuyên phát triển, gia công và thiết kế phần mềm, cung cấp các ứng dụng trí tuệ nhân tạo thông minh nhằm tối ưu hóa mọi quy trình làm việc.</p>
+                </div>
+            </div>
+            <div class="block-contact--input">
+                <form id="sendMailForm" onsubmit="event.preventDefault(); sendEmail();">
+                    <label>
+                        <input type="text" class="input" placeholder="Full Name" id="from_name" name="from_name"/>
+                    </label>
+                    <label>
+                        <input type="text" class="input" placeholder="Phone number" id="from_phone" name="from_phone"/>
+                    </label>
+                    <label>
+                        <input type="text" class="input" placeholder="Email" id="from_email" name="from_email"/>
+                    </label>
+                    <div class="view-more">
+                        <!-- <a href="" class="view-more--btn" onclick="document.getElementById('sendMailForm').submit(); return false;">
+                            Gửi ngay
+                            <img src="img/view-more.svg" alt="">
+                        </a> -->
+                        <input type="submit" class="view-more--btn" id="button" value="Send Email ↗" >
+                        <div class="view-more--des">
+                            Thông tin khách hàng được bảo mật
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <div include-html="footer.html" id="footer"></div>
@@ -1065,5 +1103,24 @@
 <!--<script src="js/jquery-2.2.4.min.js"></script>-->
 <script src="js/main.js"></script>
 <script src="js/index.js"></script>
+<script type="text/javascript">
+    emailjs.init('3esSksjrGE6Mb4dYc')
+</script>
+<script>
+    function sendEmail() {
+    emailjs.send("default_service", "template_pdrnimy", {
+        from_name: document.getElementById('from_name').value,
+        from_email: document.getElementById('from_email').value,
+        message: document.getElementById('from_phone').value
+    })
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+       alert('Email sent successfully!');
+    }, function(error) {
+       console.log('FAILED...', error);
+       alert('Failed to send email. Please try again.');
+    });
+}
+</script>
 </body>
 </html>
