@@ -3,7 +3,7 @@
 })();
 
 function sendEmail() {
-    emailjs.send("service_7nmjyxr", "template_pdrnimy", {
+    emailjs.send("default_service", "template_pdrnimy", {
         from_name: document.getElementById('from_name').value,
         from_email: document.getElementById('from_email').value,
         message: document.getElementById('from_phone').value
