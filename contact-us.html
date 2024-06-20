@@ -11,23 +11,23 @@
         </div>
     </div>
     <div class="block-contact--input">
-        <form>
+        <form id="sendMailForm" onsubmit="event.preventDefault(); sendEmail();">
             <label>
-                <input type="text" class="input" placeholder="Full Name"/>
+                <input type="text" class="input" placeholder="Full Name" id="from_name" name="from_name"/>
             </label>
             <label>
-                <input type="text" class="input" placeholder="Phone number"/>
+                <input type="text" class="input" placeholder="Phone number" id="from_phone" name="from_phone"/>
             </label>
             <label>
-                <input type="text" class="input" placeholder="Email"/>
+                <input type="text" class="input" placeholder="Email" id="from_email" name="from_email"/>
             </label>
             <div class="view-more">
-                <a href="" class="view-more--btn">
-                    Send now
+                <a href="#" class="view-more--btn" onclick="document.getElementById('sendMailForm').submit(); return false;">
+                    Gửi ngay
                     <img src="img/view-more.svg" alt="">
                 </a>
                 <div class="view-more--des">
-                    We are committed to protecting customer information
+                    Thông tin khách hàng được bảo mật
                 </div>
             </div>
         </form>
