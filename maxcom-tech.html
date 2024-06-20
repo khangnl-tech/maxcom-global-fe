@@ -341,15 +341,16 @@
                     </div>
                 </div>
                 <div class="block-contact--input">
-                    <form>
+                    <form id="sendMailForm" onsubmit="event.preventDefault(); sendEmail();">
                         <label>
                             <input type="text" class="input" placeholder="Email"/>
                         </label>
                         <div class="view-more">
-                            <a href="" class="view-more--btn">
+                            <!-- <a href="" class="view-more--btn">
                                 Đăng Ký Ngay
                                 <img src="img/view-more.svg" alt="">
-                            </a>
+                            </a> -->
+                            <input type="submit" class="view-more--btn" id="button" value="Send Email ↗" >
                             <div class="view-more--des">
                                 Thông tin của quý khách được bảo mật
                             </div>
