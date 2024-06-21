@@ -1,9 +1,9 @@
 (function(){
-    emailjs.init("3esSksjrGE6Mb4dYc");
+    emailjs.init("UPps8hPXuKX8ybWp2");
 })();
 
 function sendEmail() {
-    emailjs.send("default_service", "template_pdrnimy", {
+    emailjs.send("default_service", "template_t60eazq", {
         from_name: document.getElementById('from_name').value,
         from_email: document.getElementById('from_email').value,
         message: document.getElementById('from_phone').value
