@@ -741,6 +741,7 @@
   font-weight: 400;
   line-height: normal;
   width: 80%;
+  text-align: center;
 }
 .contact-us .block-contact--des--description {
   width: 100%;
@@ -3192,7 +3193,6 @@ section.main-page.ecommerce.maxcom-ecom .content-bottom .card-content .list-trai
 }
 .ecommerce.aigen .content-bottom .card-content .head {
   display: flex;
-  padding: 20px;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #A1A1A1;
@@ -3868,7 +3868,7 @@ p {
 }
 .home-page .core-value .chatbot-container--block {
   width: 317px;
-  height: 630px;
+  height: 360px;
   flex-shrink: 0;
   border-radius: 30px;
   border: 1px solid rgba(0, 68, 255, 0.2);
@@ -4018,7 +4018,7 @@ p {
 .home-page .out-team .content-bottom .item .content {
   text-align: left;
   margin-top: 200px;
-  height: 420px;
+  height: 460px;
   flex-shrink: 0;
   border-radius: 30px;
   border: 1px solid rgba(0, 68, 255, 0.2);
@@ -4071,8 +4071,8 @@ p {
   gap: 5px;
   border-radius: 10px;
   background: var(--bg-btn-1) !important;
-  top: 55%;
-  right: 0px;
+  top: 62%;
+  right: 0;
 }
 .home-page .out-team .content-bottom .item .title h3 {
   text-align: center;
@@ -4479,7 +4479,7 @@ p {
     margin-top: 155px !important;
   }
   .home-page .out-team .content-bottom .item .title {
-    top: 60% !important;
+    top: 65% !important;
   }
   .home-page .new-maxcom .content .new-list {
     grid-template-columns: repeat(1, 1fr) !important;

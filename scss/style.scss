@@ -615,7 +615,7 @@ p {
       }
       &--block {
         width: 317px;
-        height: 630px;
+        height: 360px;
         flex-shrink: 0;
         border-radius: 30px;
         border: 1px solid $bg-blue-dark;
@@ -806,7 +806,7 @@ p {
         .content {
           text-align: left;
           margin-top: 200px;
-          height: 420px;
+          height: 460px;
           flex-shrink: 0;
 
           border-radius: 30px;
@@ -871,8 +871,9 @@ p {
 
           background: var(--bg-btn-1) !important;
 
-          top: 55%;
-          right: 0px;
+          top: 62%;
+          right: 0;
+
           h3 {
             text-align: center;
             font-size: 16px;
@@ -1380,7 +1381,7 @@ p {
   }
 
   .home-page .out-team .content-bottom .item .title {
-    top: 60% !important;
+    top: 65% !important;
   }
 
   .home-page .new-maxcom .content .new-list {
