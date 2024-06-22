@@ -597,7 +597,6 @@ function includeHTML() {
  */
 function updateButton({ buttonEl, isDark }) {
     const logoLinks = document.querySelectorAll('.logo-link');
-    const btnViews = document.querySelectorAll('.custom-view-more');
     const newCta = isDark ? "Change to light theme" : "Change to dark theme";
     const iconSearch = document.getElementById('search-icon');
 
@@ -623,20 +622,6 @@ function updateButton({ buttonEl, isDark }) {
             img.src = '/img/search-icon-white.svg';
         }
     }
-    btnViews?.forEach(link => {
-        const img = link.querySelector('img');
-        if (isDark) {
-            img.src = '/img/view-more.svg';
-        } else {
-            img.src = '/img/view-more-dark.svg';
-            link.addEventListener('mouseenter', function () {
-                img.src = '/img/view-more.svg';
-            });
-            link.addEventListener('mouseleave', function () {
-                img.src = '/img/view-more-dark.svg';
-            });
-        }
-    });
 
 }
 
@@ -794,23 +779,29 @@ document.addEventListener('DOMContentLoaded', function () {
     const socialList = document.getElementById('socialList');
     const socialListBlock = document.getElementById('social-list-block');
 
-    // Set initial state to visible
-    const socialListHeight = socialList.scrollHeight;
-    socialList.style.height = `${socialListHeight}px`;
-    socialListBlock.classList.add('active');
-
     mainButton.addEventListener('click', function () {
-        if (socialList.style.height === '0px') {
+        if (socialList.style.height === '0px' || socialList.style.height === '') {
             // Lấy chiều cao tổng của nội dung socialList
             const socialListHeight = socialList.scrollHeight;
             socialList.style.height = `${socialListHeight}px`;
-            socialListBlock.classList.add('active');
+            socialListBlock.classList?.add('active');
+            socialListBlock.padding = '5px';  // Sửa lỗi: phải là socialListBlock.style.padding
+            socialListBlock.boxShadow = 'none';  // Sửa lỗi: phải là socialListBlock.style.boxShadow
+            socialListBlock.backgroundColor = 'rgba(245, 245, 245, 0.60)';  // Sửa lỗi: phải là socialListBlock.style.backgroundColor
         } else {
-            socialListBlock.classList.remove('active');
+            socialListBlock.classList?.remove('active');
             socialList.style.height = '0px';
+            socialListBlock.padding = '0';
+            socialListBlock.boxShadow = '5px 2px 22.1px 0px rgba(0, 68, 255, 0.20)';
+            socialListBlock.backgroundColor = 'transparent';  // Sửa lỗi: phải là socialListBlock.style.backgroundColor
         }
     });
+
+
+    // Ensure the social list is hidden when the page loads
+    socialList.style.height = '0px';
 });
+
 // JavaScript
 // window.addEventListener('scroll', () => {
 //     const cards = document.querySelectorAll('.shared-by-student .list-content .item');
@@ -837,7 +828,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const items = document.querySelectorAll('.list-content .item');
-    iteMs. forEach(item => {
+    items.forEach(item => {
         observer.observe(item);
     });
 });
