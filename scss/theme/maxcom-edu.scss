@@ -306,9 +306,11 @@
         margin-right: 0;
 
         .title {
+          width: 100%;
           top: unset !important;
-          right: 17px;
-          bottom: 30%;
+          right: center;
+          bottom: 24%;
+          align-items: center;
 
           @media (max-width: 768px) {
             font-size: 16px;
@@ -332,7 +334,7 @@
         }
         .content {
           margin-top: 250px;
-          height: 350px;
+          height: 400px;
         }
       }
 

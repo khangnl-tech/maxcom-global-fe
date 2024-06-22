@@ -332,9 +332,11 @@
   margin-right: 0;
 }
 .home-page #maxcom-edu .content-bottom .item .title {
+  width: 100%;
   top: unset !important;
-  right: 17px;
-  bottom: 30%;
+  right: center;
+  bottom: 24%;
+  align-items: center;
 }
 @media (max-width: 768px) {
   .home-page #maxcom-edu .content-bottom .item .title {
@@ -359,7 +361,7 @@
 }
 .home-page #maxcom-edu .content-bottom .item .content {
   margin-top: 250px;
-  height: 350px;
+  height: 400px;
 }
 .home-page #maxcom-edu .content-bottom .owl-nav {
   position: absolute;

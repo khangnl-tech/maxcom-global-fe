@@ -1961,9 +1961,11 @@
   margin-right: 0;
 }
 .home-page #maxcom-edu .content-bottom .item .title {
+  width: 100%;
   top: unset !important;
-  right: 17px;
-  bottom: 30%;
+  right: center;
+  bottom: 24%;
+  align-items: center;
 }
 @media (max-width: 768px) {
   .home-page #maxcom-edu .content-bottom .item .title {
@@ -1988,7 +1990,7 @@
 }
 .home-page #maxcom-edu .content-bottom .item .content {
   margin-top: 250px;
-  height: 350px;
+  height: 400px;
 }
 .home-page #maxcom-edu .content-bottom .owl-nav {
   position: absolute;
@@ -4003,9 +4005,6 @@ p {
   flex-shrink: 0;
   margin: 0 auto;
 }
-.home-page .out-team .content-bottom .item {
-  margin-right: 10px;
-}
 .home-page .out-team .content-bottom .item img {
   height: auto;
   position: absolute;
@@ -4018,7 +4017,7 @@ p {
 .home-page .out-team .content-bottom .item .content {
   text-align: left;
   margin-top: 200px;
-  height: 460px;
+  height: 400px;
   flex-shrink: 0;
   border-radius: 30px;
   border: 1px solid rgba(0, 68, 255, 0.2);
@@ -4027,6 +4026,11 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .home-page .out-team .content-bottom .item .content {
+    height: 380px;
+  }
 }
 .home-page .out-team .content-bottom .item .content .main-content {
   color: #1E1E1E;
@@ -4073,6 +4077,8 @@ p {
   background: var(--bg-btn-1) !important;
   top: 62%;
   right: 0;
+  width: 100%;
+  align-items: center;
 }
 .home-page .out-team .content-bottom .item .title h3 {
   text-align: center;

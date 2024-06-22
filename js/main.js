@@ -837,7 +837,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const items = document.querySelectorAll('.list-content .item');
-    items.forEach(item => {
+    iteMs. forEach(item => {
         observer.observe(item);
     });
 });
