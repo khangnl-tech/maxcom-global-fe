@@ -597,6 +597,7 @@ function includeHTML() {
  */
 function updateButton({ buttonEl, isDark }) {
     const logoLinks = document.querySelectorAll('.logo-link');
+    const btnViews = document.querySelectorAll('.custom-view-more');
     const newCta = isDark ? "Change to light theme" : "Change to dark theme";
     const iconSearch = document.getElementById('search-icon');
 
@@ -622,6 +623,20 @@ function updateButton({ buttonEl, isDark }) {
             img.src = '/img/search-icon-white.svg';
         }
     }
+    btnViews?.forEach(link => {
+        const img = link.querySelector('img');
+        if (isDark) {
+            img.src = '/img/view-more.svg';
+        } else {
+            img.src = '/img/view-more-dark.svg';
+            link.addEventListener('mouseenter', function () {
+                img.src = '/img/view-more.svg';
+            });
+            link.addEventListener('mouseleave', function () {
+                img.src = '/img/view-more-dark.svg';
+            });
+        }
+    });
 
 }
 
@@ -772,7 +787,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// social block
+// social block invisile
 
 document.addEventListener('DOMContentLoaded', function () {
     const mainButton = document.getElementById('mainButton');
@@ -801,6 +816,32 @@ document.addEventListener('DOMContentLoaded', function () {
     // Ensure the social list is hidden when the page loads
     socialList.style.height = '0px';
 });
+
+
+// social block visible
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const mainButton = document.getElementById('mainButton');
+//     const socialList = document.getElementById('socialList');
+//     const socialListBlock = document.getElementById('social-list-block');
+
+//     // Set initial state to visible
+//     const socialListHeight = socialList.scrollHeight;
+//     socialList.style.height = `${socialListHeight}px`;
+//     socialListBlock.classList.add('active');
+
+//     mainButton.addEventListener('click', function () {
+//         if (socialList.style.height === '0px') {
+//             // Lấy chiều cao tổng của nội dung socialList
+//             const socialListHeight = socialList.scrollHeight;
+//             socialList.style.height = `${socialListHeight}px`;
+//             socialListBlock.classList.add('active');
+//         } else {
+//             socialListBlock.classList.remove('active');
+//             socialList.style.height = '0px';
+//         }
+//     });
+// });
 
 // JavaScript
 // window.addEventListener('scroll', () => {
