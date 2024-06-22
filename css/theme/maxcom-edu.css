@@ -450,6 +450,9 @@
   line-height: normal;
   margin-bottom: 15px;
 }
+.home-page #training .main-content .item .content-top .desc1 {
+  margin-bottom: 41px !important;
+}
 .home-page #training .main-content .item .content-top .desc {
   color: var(--title-color);
   font-size: 14px;
@@ -668,7 +671,6 @@
   line-height: normal;
 }
 .home-page .shared-by-student .main-content .content-bottom .list-content .item .text-content {
-  height: 75%;
   overflow: hidden;
 }
 .home-page .shared-by-student .main-content .content-bottom .list-content .item .text-content p {
@@ -680,7 +682,7 @@
   display: block;
   height: 100%;
 }
-.home-page .shared-by-student .main-content .content-bottom .list-content .item .text-content span {
+.home-page .shared-by-student .main-content .content-bottom .list-content .item .text-content span.hover-item {
   display: block;
   height: 90px;
   background: var(--liner-hidden);
@@ -697,6 +699,7 @@
 }
 .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(1):hover {
   height: auto;
+  min-height: 427px;
   max-height: 600px;
 }
 .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(1):hover .text-content span {
@@ -709,6 +712,7 @@
 }
 .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(2):hover {
   height: auto;
+  min-height: 300px;
   max-height: 600px;
 }
 .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(2):hover .text-content span {
@@ -721,6 +725,7 @@
 }
 .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(3):hover {
   height: auto;
+  min-height: 300px;
   max-height: 600px;
 }
 .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(3):hover .text-content span {
@@ -733,6 +738,7 @@
 }
 .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(4):hover {
   height: auto;
+  min-height: 427px;
   max-height: 600px;
 }
 .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(4):hover .text-content span {
@@ -745,6 +751,7 @@
 }
 .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(5):hover {
   height: auto;
+  min-height: 364px;
   max-height: 600px;
 }
 .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(5):hover .text-content span {
@@ -757,6 +764,7 @@
 }
 .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(6):hover {
   height: auto;
+  min-height: 364px;
   max-height: 600px;
 }
 .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(6):hover .text-content span {
@@ -766,27 +774,36 @@
   .home-page .shared-by-student .main-content .content-bottom .list-content {
     column-count: 2;
   }
-  .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(1) {
-    height: 430px;
+  .home-page .shared-by-student .main-content .content-bottom .list-content .item {
+    height: 430px !important;
+    transition: max-height 0.8s ease-in-out !important;
+  }
+  .home-page .shared-by-student .main-content .content-bottom .list-content .item:hover {
+    height: auto !important;
+    min-height: 430px !important;
+    max-height: 600px !important;
+  }
+  .home-page .shared-by-student .main-content .content-bottom .list-content .item:hover .text-content span {
+    display: none;
   }
   .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(2) {
-    height: 430px;
+    max-height: 430px;
     margin-top: 20px;
   }
   .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(3) {
-    height: 430px;
+    max-height: 430px;
     margin-top: 20px;
   }
   .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(4) {
-    height: 430px;
+    max-height: 430px;
     margin-top: 20px;
   }
   .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(5) {
-    height: 430px;
+    max-height: 430px;
     margin-top: 20px;
   }
   .home-page .shared-by-student .main-content .content-bottom .list-content .item:nth-child(6) {
-    height: 430px;
+    max-height: 430px;
     margin-top: 20px;
   }
 }
@@ -994,5 +1011,3 @@ section.main-page.ecommerce.maxcom-ecom .content-bottom .card-content .list-trai
   line-height: normal;
   text-align: left;
 }
-
-/*# sourceMappingURL=maxcom-edu.css.map */

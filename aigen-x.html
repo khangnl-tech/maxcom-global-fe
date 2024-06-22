@@ -31,84 +31,85 @@
 
 <body>
 <div id="main">
-    <div id="header" class="main-page">
-        <nav class="nav-bar">
-            <div class="logo-img">
-                <a href="index.html" class="logo-link">
-                    <img src="/img/logo-maxcom-light.svg" alt="logo">
-                </a>
-
-                <button id="navbar-toggler" class="navbar-toggler d-lg-none">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-            <div class="menu-box d-none d-lg-block">
-                <ul class="menu-list">
-                    <li class="menu-item">
-                        <a class="menu-link" href="index.html">Trang chủ</a>
-                    </li>
-                    <li class="menu-item position-md-relative">
-                        <a class="menu-link" style="cursor: pointer">
-                            Hệ sinh thái
-                            <span class="drop-down-icon">
+    <div id="header" class="background">
+        <div class="main-page">
+            <nav class="nav-bar">
+                <div class="logo-img">
+                    <a href="index.html" class="logo-link">
+                        <img src="/img/logo-maxcom-light.svg" alt="logo">
+                    </a>
+                    <button id="navbar-toggler" class="navbar-toggler d-lg-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="menu-box d-none d-lg-block">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a class="menu-link" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="menu-item position-md-relative">
+                            <a class="menu-link" style="cursor: pointer">
+                                Hệ sinh thái
+                                <span class="drop-down-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
                                     <path d="M1.66663 2L5.37117 5.67453C5.80867 6.10849 6.52458 6.10849 6.96208 5.67453L10.6666 2" stroke="#01F5B3" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </span>
-                        </a>
-                        <ul class="menu-item-child">
-                            <li class="child-item">
-                                <a class="child-link" href="maxcom-tech.html">Maxcom Tech</a>
-                            </li>
-                            <li class="child-item">
-                                <a class="child-link" href="maxcom-edu.html">Maxcom Edu</a>
-                            </li>
-                            <li class="child-item">
-                                <a class="child-link" href="maxcom-ecom.html">Maxcom Ecom</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- <li class="menu-item">
-                        <a class="menu-link" href="cooperate.html">Về chúng tôi</a>
-                    </li> -->
-                    <li class="menu-item">
-                        <a class="menu-link" href="aigen-x.html">Aigen-X</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="news.html">Tin tức - Sự kiện</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="cooperate.html">Cơ hội hợp tác</a>
-                    </li>
+                            </a>
+                            <ul class="menu-item-child">
+                                <li class="child-item">
+                                    <a class="child-link" href="maxcom-tech.html">Maxcom Tech</a>
+                                </li>
+                                <li class="child-item">
+                                    <a class="child-link" href="maxcom-edu.html">Maxcom Edu</a>
+                                </li>
+                                <li class="child-item">
+                                    <a class="child-link" href="maxcom-ecom.html">Maxcom Ecom</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li class="menu-item"> -->
+                        <!-- <a class="menu-link" href="cooperate.html">Về chúng tôi</a> -->
+                        <!-- </li> -->
+                        <li class="menu-item">
+                            <a class="menu-link" href="aigen-x.html">Aigen-X</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="news.html">Tin tức - Sự kiện</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="cooperate.html">Cơ hội hợp tác</a>
+                        </li>
 
-                    <li class="menu-item" style="margin-right: 100px">
+                        <li class="menu-item" style="margin-right: 100px">
                             <span class="search-icon" id="search-icon">
                                 <img src="img/search-icon-black.svg" alt="search">
                             </span>
+                        </li>
+
+                        <li class="contact-button">
+                            <button class="button button-rounded" onclick="window.location.href='/index.html#contact-us'">Contact</button>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="menu-mobile d-block d-lg-none">
+                    <li class="menu-mobile-item">
+                        <a class="menu-mobile-link" href="/index.html">Trang chủ</a>
                     </li>
 
-                    <li class="contact-button">
-                        <button class="button button-rounded" onclick="window.location.href='/index.html#contact-us'">Contact</button>
+                    <!-- <li class="menu-mobile-item"> -->
+                    <!-- <a class="menu-mobile-link" href="/about-us.html">Về chúng tôi</a> -->
+                    <!-- </li> -->
+                    <li class="menu-mobile-item">
+                        <a class="menu-mobile-link" href="/aigen-x.html">Tin tức</a>
+                    </li>
+                    <li class="menu-mobile-item d-flex align-items-center">
+                        <input type="text" placeholder="Search...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
                     </li>
                 </ul>
-            </div>
-            <ul class="menu-mobile d-block d-lg-none">
-                <li class="menu-mobile-item">
-                    <a class="menu-mobile-link" href="/index.html">Trang chủ</a>
-                </li>
-
-                <!-- <li class="menu-mobile-item">
-                    <a class="menu-mobile-link" href="/about-us.html">Về chúng tôi</a>
-                </li> -->
-                <li class="menu-mobile-item">
-                    <a class="menu-mobile-link" href="/aigen-x.html">Tin tức</a>
-                </li>
-                <li class="menu-mobile-item d-flex align-items-center">
-                    <input type="text" placeholder="Search...">
-                    <button type="submit"><i class="fas fa-search"></i></button>
-                </li>
-            </ul>
-        </nav>
+            </nav>
+        </div>
     </div>
 
     <div id="theme-toggle" class="theme-toggle">
@@ -144,7 +145,7 @@
         </div>
     </div>
 
-    <div class="home-page maxcom-tech" style=" padding-top: 89px">
+    <div class="home-page maxcom-tech" style=" padding-top: 120px">
         <div class="bg-image">
             <div class="bg-light1">
                 <img src="img/light-1.svg" alt="block1">

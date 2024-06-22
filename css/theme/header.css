@@ -68,10 +68,11 @@
 
 /*--------------------------- Fonts ----------------------*/
 #header {
+  background: rgba(25, 19, 69, 0.8);
   position: fixed;
   z-index: 99999;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
   top: 0;
   box-sizing: border-box;
 }
@@ -289,5 +290,3 @@
     top: calc(100% + 10px);
   }
 }
-
-/*# sourceMappingURL=header.css.map */

@@ -229,7 +229,10 @@ function includeHTML() {
             1200:{
                 items: 4
             }
-        }
+        },
+        autoplay: true,
+        autoplayTimeout: 3500,
+        autoplayHoverPause: true
     });
 
     //news slide
@@ -248,7 +251,10 @@ function includeHTML() {
             992: {
                 items: 3
             },
-        }
+        },
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true
     });
 
     //maxcom-edu
@@ -278,7 +284,10 @@ function includeHTML() {
                 margin: 35,
                 items: 3
             }
-        }
+        },
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true
     });
 
     $("#training .owl-carousel").owlCarousel({
@@ -297,7 +306,10 @@ function includeHTML() {
             769:{
                 items: 2
             },
-        }
+        },
+        autoplay: true,
+        autoplayTimeout: 2500,
+        autoplayHoverPause: true
     });
 
     $('.shared-by-student .owl-carousel').owlCarousel({
@@ -309,7 +321,10 @@ function includeHTML() {
             0:{
                 items: 1
             }
-        }
+        },
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true
     });
 
     $('.parner .owl-carousel').owlCarousel({
@@ -330,7 +345,10 @@ function includeHTML() {
             1200:{
                 items: 7
             }
-        }
+        },
+        autoplay: true,
+        autoplayTimeout: 3500,
+        autoplayHoverPause: true
     });
 
     //maxcom tech
@@ -345,7 +363,10 @@ function includeHTML() {
             0: {
                 items: 1
             },
-        }
+        },
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true
     });
 
 
@@ -367,7 +388,10 @@ function includeHTML() {
             1200:{
                 items: 1
             }
-        }
+        },
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true
     });
 
     $('#aigen-phone .owl-carousel').owlCarousel({
@@ -379,7 +403,10 @@ function includeHTML() {
             0: {
                 items: 1
             }
-        }
+        },
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true
     });
 
     // google map
@@ -589,6 +616,18 @@ function includeHTML() {
             ]
         });
     }
+
+    const heightItem = $('.shared-by-student .item');
+
+    heightItem.each(function() {
+        const item = $(this);
+        const textContent = item.children('.text-content');
+        if ((item.height() * 0.70) < textContent.height()) {
+            textContent.children('span').addClass('hover-item');
+        } else {
+            textContent.children('span').removeClass('hover-item');
+        }
+    });
 
 })(jQuery);
 
@@ -873,3 +912,5 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(item);
     });
 });
+
+
