@@ -150,6 +150,10 @@
   max-width: 997px;
   margin-bottom: 90px;
 
+  @media (max-width: 768px) {
+    padding: 10px 30px 0;
+  }
+
   .content-top {
     h2 {
       color: var(--title-color);

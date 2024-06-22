@@ -3186,6 +3186,11 @@ section.main-page.ecommerce.maxcom-ecom .content-bottom .card-content .list-trai
   max-width: 997px;
   margin-bottom: 90px;
 }
+@media (max-width: 768px) {
+  .ecommerce.aigen {
+    padding: 10px 30px 0;
+  }
+}
 .ecommerce.aigen .content-top h2 {
   color: var(--title-color);
   text-align: center;
