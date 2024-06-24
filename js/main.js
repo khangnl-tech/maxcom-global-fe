@@ -225,9 +225,6 @@ function includeHTML() {
             },
             992: {
                 items: 3
-            },
-            1200:{
-                items: 4
             }
         },
         autoplay: true,

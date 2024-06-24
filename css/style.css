@@ -4040,7 +4040,7 @@ p {
 .home-page .out-team .content-bottom .item .content {
   text-align: left;
   margin-top: 200px;
-  height: 400px;
+  height: 500px;
   flex-shrink: 0;
   border-radius: 30px;
   border: 1px solid rgba(0, 68, 255, 0.2);
@@ -4098,7 +4098,7 @@ p {
   gap: 5px;
   border-radius: 10px;
   background: var(--bg-btn-1) !important;
-  top: 62%;
+  top: 73%;
   right: 0;
   width: 100%;
   align-items: center;
