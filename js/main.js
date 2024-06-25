@@ -631,50 +631,50 @@ function includeHTML() {
 /**
  * Utility function to update the button state and aria-label.
  */
-function updateButton({ buttonEl, isDark }) {
-    const logoLinks = document.querySelectorAll('.logo-link');
-    const btnViews = document.querySelectorAll('.custom-view-more');
-    const newCta = isDark ? "Change to light theme" : "Change to dark theme";
-    const iconSearch = document.getElementById('search-icon');
+// function updateButton({ buttonEl, isDark }) {
+//     const logoLinks = document.querySelectorAll('.logo-link');
+//     const btnViews = document.querySelectorAll('.custom-view-more');
+//     const newCta = isDark ? "Change to light theme" : "Change to dark theme";
+//     const iconSearch = document.getElementById('search-icon');
 
-    buttonEl.setAttribute("aria-label", newCta);
-    if (isDark) {
-        buttonEl.classList.add("active");
-    } else {
-        buttonEl.classList.remove("active");
-    }
-    logoLinks.forEach(link => {
-        const img = link.querySelector('img');
-        if (isDark) {
-            img.src = '/img/logo-maxcom-normal.svg';
-        } else {
-            img.src = '/img/logo-maxcom-light.svg';
-        }
-    });
-    const img = iconSearch?.querySelector('img');
-    if(img) {
-        if (!isDark) {
-            img.src = '/img/search-icon-black.svg';
-        } else {
-            img.src = '/img/search-icon-white.svg';
-        }
-    }
-    btnViews?.forEach(link => {
-        const img = link.querySelector('img');
-        if (isDark) {
-            img.src = '/img/view-more.svg';
-        } else {
-            img.src = '/img/view-more-dark.svg';
-            link.addEventListener('mouseenter', function () {
-                img.src = '/img/view-more.svg';
-            });
-            link.addEventListener('mouseleave', function () {
-                img.src = '/img/view-more-dark.svg';
-            });
-        }
-    });
+//     buttonEl.setAttribute("aria-label", newCta);
+//     if (isDark) {
+//         buttonEl.classList.add("active");
+//     } else {
+//         buttonEl.classList.remove("active");
+//     }
+//     logoLinks.forEach(link => {
+//         const img = link.querySelector('img');
+//         if (isDark) {
+//             img.src = '/img/logo-maxcom-normal.svg';
+//         } else {
+//             img.src = '/img/logo-maxcom-light.svg';
+//         }
+//     });
+//     const img = iconSearch?.querySelector('img');
+//     if(img) {
+//         if (!isDark) {
+//             img.src = '/img/search-icon-black.svg';
+//         } else {
+//             img.src = '/img/search-icon-white.svg';
+//         }
+//     }
+//     btnViews?.forEach(link => {
+//         const img = link.querySelector('img');
+//         if (isDark) {
+//             img.src = '/img/view-more.svg';
+//         } else {
+//             img.src = '/img/view-more-dark.svg';
+//             link.addEventListener('mouseenter', function () {
+//                 img.src = '/img/view-more.svg';
+//             });
+//             link.addEventListener('mouseleave', function () {
+//                 img.src = '/img/view-more-dark.svg';
+//             });
+//         }
+//     });
 
-}
+// }
 
 document.addEventListener('DOMContentLoaded', () => {
     includeHTML();
@@ -709,22 +709,22 @@ function updateLogoLinks() {
 /**
  * Utility function to update the theme setting on the html tag
  */
-function updateThemeOnHtmlEl({ theme }) {
-    document.querySelector("html").setAttribute("data-theme", theme);
-    const sunIcon = document.getElementById('sun-icon');
-    const moonIcon = document.getElementById('moon-icon');
-    if (theme === "dark") {
-        sunIcon.style.backgroundColor = 'transparent';
-        sunIcon.style.color = 'white';
-        moonIcon.style.backgroundColor = 'white';
-        moonIcon.style.color = 'blue';
-    } else {
-        sunIcon.style.backgroundColor = 'white';
-        sunIcon.style.color = 'blue';
-        moonIcon.style.backgroundColor = 'transparent';
-        moonIcon.style.color = 'black';
-    }
-}
+// function updateThemeOnHtmlEl({ theme }) {
+//     document.querySelector("html").setAttribute("data-theme", theme);
+//     const sunIcon = document.getElementById('sun-icon');
+//     const moonIcon = document.getElementById('moon-icon');
+//     if (theme === "dark") {
+//         sunIcon.style.backgroundColor = 'transparent';
+//         sunIcon.style.color = 'white';
+//         moonIcon.style.backgroundColor = 'white';
+//         moonIcon.style.color = 'blue';
+//     } else {
+//         sunIcon.style.backgroundColor = 'white';
+//         sunIcon.style.color = 'blue';
+//         moonIcon.style.backgroundColor = 'transparent';
+//         moonIcon.style.color = 'black';
+//     }
+// }
 
 /**
  * Calculate the current theme setting
@@ -755,21 +755,21 @@ let currentThemeSetting = calculateSettingAsThemeString({ localStorageTheme, sys
 /**
  * 3. Update the theme setting and button text according to current settings
  */
-updateButton({ buttonEl: button, isDark: currentThemeSetting === "dark" });
-updateThemeOnHtmlEl({ theme: currentThemeSetting });
+// updateButton({ buttonEl: button, isDark: currentThemeSetting === "dark" });
+// updateThemeOnHtmlEl({ theme: currentThemeSetting });
 
 /**
  * 4. Add an event listener to toggle the theme
  */
-button.addEventListener("click", (event) => {
-    const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
+// button.addEventListener("click", (event) => {
+//     const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
 
-    localStorage.setItem("theme", newTheme);
-    updateButton({ buttonEl: button, isDark: newTheme === "dark" });
-    updateThemeOnHtmlEl({ theme: newTheme });
+//     localStorage.setItem("theme", newTheme);
+//     updateButton({ buttonEl: button, isDark: newTheme === "dark" });
+//     updateThemeOnHtmlEl({ theme: newTheme });
 
-    currentThemeSetting = newTheme;
-});
+//     currentThemeSetting = newTheme;
+// });
 
 const tabButtons = document.querySelectorAll('.tablinks');
 const contentDivs = document.querySelectorAll('.content');
